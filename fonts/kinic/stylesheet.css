@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Kinic Slab';
+    src: url('klinicslablight.eot');
+    src: url('klinicslablight.eot?#iefix') format('embedded-opentype'),
+         url('klinicslablight.woff') format('woff'),
+         url('klinicslablight.ttf') format('truetype'),
+         url('klinicslablight.svg#klinic_slablight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Kinic Slab';
+    src: url('klinicslabbook.eot');
+    src: url('klinicslabbook.eot?#iefix') format('embedded-opentype'),
+         url('klinicslabbook.woff') format('woff'),
+         url('klinicslabbook.ttf') format('truetype'),
+         url('klinicslabbook.svg#klinic_slabbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Kinic Slab';
+    src: url('klinicslabbookit.eot');
+    src: url('klinicslabbookit.eot?#iefix') format('embedded-opentype'),
+         url('klinicslabbookit.woff') format('woff'),
+         url('klinicslabbookit.ttf') format('truetype'),
+         url('klinicslabbookit.svg#klinic_slabbook_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Kinic Slab';
+    src: url('klinicslabbold.eot');
+    src: url('klinicslabbold.eot?#iefix') format('embedded-opentype'),
+         url('klinicslabbold.woff') format('woff'),
+         url('klinicslabbold.ttf') format('truetype'),
+         url('klinicslabbold.svg#klinic_slabbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
