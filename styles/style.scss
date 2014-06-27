@@ -1,0 +1,388 @@
+// Normalize
+@import "global/_normalize.scss";
+
+// Variables
+@import "global/_vars.scss";
+$navy: #384452;
+$skyblue: #B9D8ED;
+$blue: #03A9F4;
+$green: #60D317;
+$orange: #F15823;
+$red: #e74c3c;
+$pink: #E91E63;
+$purple: #4054B2;
+$yellow: #FFF200;
+
+$brown: #714104;
+$silver: #757575;
+$gray: #464646;
+$dark: black;
+$light: white;
+
+// Base
+@import "global/_base.scss";
+
+// Grid System
+@import "grid/_precompiled.scss";
+
+/* ================================================================== */
+/* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
+/* ================================================================== */
+
+$media-mobile-max: 767px !default;
+$media-tablet-min: 768px !default;
+$media-tablet-max: 1024px !default;
+$media-desktop-min: 1025px !default;
+// 
+// @import "grid/unsemantic-ie-snap.sass";
+// 
+// @media screen {
+//   @import "grid/unsemantic-grid-base-tablet.sass";
+// }
+// @media screen and (max-width: 767px) {
+//   @import "grid/unsemantic-grid-mobile.sass";
+// }
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   @import "grid/unsemantic-grid-tablet.sass";
+// }
+// @media screen and (min-width: 1025px) {
+//   @import "grid/unsemantic-grid-desktop.sass";
+// }
+
+// Components
+@import "global/_scrollbars.scss";
+
+// Animations
+@import "global/_animations.scss";
+
+// Forms
+@import "global/_forms.scss";
+
+// Buttons
+@import "global/_buttons.scss";
+
+// Typography
+@import "global/_type.scss";
+@import url(../fonts/kinic/stylesheet.css);
+
+// Icons
+@import url(../fonts/icons/style.css);
+
+// Prettyprint Code
+@import "global/_prettyprint-monokai.scss";
+
+// Modals
+@import "global/_modal.scss";
+
+// Long Shadows
+@import "global/_longshadows.scss";
+
+// Navigation
+@import "_nav.scss";
+
+// Tooltips
+@import "global/_tooltips.scss";
+
+// Custom Styles
+body {
+  font-size: 20px;
+  font-weight: 300;
+//  font-family: 'Roboto', $fonts;
+}
+
+h1, h2, h3, .button-jumbo {
+  font-weight: bold;
+}
+
+
+input, div.gm-iw div, div.gm-style-mtc div, div.gm-style-cc div {
+  font-family: $fonts!important;
+}
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+hr {
+  border: 2px solid rgba(0,0,0,.5);
+}
+
+header, section, footer, .footnote {
+  position: relative; overflow: hidden;
+  padding: 30px 0px;
+  background: white
+}
+
+.sr-only, .back2top {
+  display: none;
+}
+
+.transition {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.padded {
+  padding: 50px 0;
+}
+
+.text-white {
+  color: white;
+}
+
+.button {
+  @extend .button-large;
+  border-radius: 6px;
+  margin-right: 0.2em;
+}
+
+.button {
+  @include button-inset($orange);
+  outline: none;
+  &.btn-large {
+    @extend .button-jumbo;
+  }
+}
+
+.button-orange {
+  @include button-inset($orange);
+}
+
+.button-blue {
+  @include button-inset($blue);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dark-text-shadow {
+  text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px;
+}
+
+i {
+  font-size: 80%;
+  vertical-align: baseline;
+}
+
+ul.details {
+    border-top: 1px dotted;
+    margin: 1em 2em;
+    li {
+      padding: .5em;
+      border-bottom: 1px dotted;
+    }
+}
+
+a {
+  display: inline-block;
+  -webkit-tap-highlight-color: rgba(30, 152, 211, 0.5);
+  @extend .transition;
+  &:active {
+    -webkit-transform: scale(0.9);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.row:before, .row:after {
+  clear: both;
+  content: ' ';
+}
+
+.linearound {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: ' ';
+    border-bottom: 1px solid #7d7d7d;
+    width: auto;
+    display: block;
+    margin-top: -2.4em;
+  }
+  h1, h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    color: #7d7d7d;
+    background: white;
+    padding: 0px 20px;
+  }
+}
+
+.love {
+  color: $red;
+}
+
+.highlight {
+  background: $yellow;
+}
+
+// White Box
+.white-box {
+  border-radius: $border-radius;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  color: rgb(117, 117, 117);
+  margin: 5px;
+  padding: 20px;
+  background: white;
+  h1, h2, h3 {
+    color: black;
+    line-height: 1em;
+    margin: 0px;
+    border-bottom: 1px solid;
+    i {
+      float: right;
+    }
+  }
+}
+
+// Intro
+#intro {
+  // background: rgba(223, 245, 255, 1);
+  color: black;
+  background: url(/images/dc-capitol-side.jpg); 
+  background-size: cover;
+  background-position: middle;
+  padding-bottom: 0px;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  &:before {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.6);
+    z-index: 100;
+  }
+  * {
+    position: relative;
+    z-index: 200;
+  }
+  .middled {
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  .logo {
+    line-height: 14px;
+    text-align: center;
+    font-size: 180px;
+    font-weight: 200;
+    // letter-spacing: -10px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  hr {
+    max-width: 300px;
+    margin: -20px auto 10px auto;
+    border: 2px solid rgba(0,0,0,.5);
+  }
+  .circle {
+    width: 140px;
+    height: 140px;
+    padding-top: 25px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    margin: -60px -30px 0 -30px;
+  }
+  .ribbon {
+    @extend h1;
+    font-size: 80px;
+    display: block;
+    line-height: 146px;
+    vertical-align: middle;
+    background: url(/vectors/logo-ribbon.png);
+    background-size: 550px 146px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -122px;
+    margin-left: -10px;
+    position: relative;
+  }
+
+  .lead {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+// Waves
+.waves {
+  display: block;
+  position: relative;
+  height: 80px;
+  background: url(/vectors/wave.png);
+  background-repeat: repeat-x;
+  background-size: 80px 60px;
+  &:after {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background: url(/vectors/wave-water.png);
+    background-repeat: repeat-x;
+    background-size: 160px 120px;
+  }
+}
+
+// Holo
+#learn {
+  // background: $green;
+}
+#code {
+  // background: $blue;
+}
+#swag {
+  // background: $purple;
+}
+
+// FAQ
+#faq {
+  background: $red;
+  color: white;
+  .qna {
+    @extend .white-box;
+    margin-bottom: 20px;
+  }
+}
+#faq-submit {
+  background: darken($red, 20%);
+  color: white;
+  textarea {
+    background: rgba(0,0,0,.5);
+    border: 0px;
+    padding: 10px;
+    border-radius: $border-radius;
+  }
+  input.submit {
+    @extend .button;
+    @include button-subtle($gray);
+  }
+}
+
+.register-button {
+  @include button-subtle($red);
+}
+
+@media screen and (max-width: $mobile) {
+}
