@@ -140,6 +140,7 @@ header, section, footer, .footnote {
 .button {
   @include button-inset($orange);
   outline: none;
+  font-weight: normal;
   &.btn-large {
     @extend .button-jumbo;
   }
@@ -152,6 +153,11 @@ header, section, footer, .footnote {
 .button-blue {
   @include button-inset($blue);
 }
+
+.button-green {
+  @include button-inset($green);
+}
+
 
 .disabled {
   pointer-events: none;
@@ -180,9 +186,9 @@ a {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(30, 152, 211, 0.5);
   @extend .transition;
-  &:active {
+  /* &:active {
     -webkit-transform: scale(0.9);
-  }
+  } */
 }
 
 img {
@@ -382,6 +388,12 @@ img {
 
 .register-button {
   @include button-subtle($red);
+}
+
+// Footer
+#more {
+  background: $navy;
+  color: white;
 }
 
 @media screen and (max-width: $mobile) {
