@@ -42,6 +42,9 @@ nav {
             &:last-child {
                 margin-right: 0px;
             }
+            &:hover {
+                text-decoration: underline;
+            }
         }
         .logo {
             float: left;
