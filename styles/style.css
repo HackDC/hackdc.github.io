@@ -2176,13 +2176,13 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-radius: 300px; }
 
 .button-large, .button, #faq-submit input.submit {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.2em; }
 
-.button-jumbo, .btn.btn-large {
-  font-size: 36px;
+.button-jumbo, .button.btn-large, #faq-submit input.btn-large.submit {
+  font-size: 32px;
   line-height: 1em;
-  padding: 15px 30px; }
+  padding: 15px 20px; }
 
 .button-jumbo-prefix {
   display: inline-block !important;
@@ -2447,20 +2447,22 @@ nav .logo b {
     display: none; }
 
   div.has-nav {
-    position: absolute;
-    z-index: 50;
+    position: fixed;
+    z-index: 9001;
     width: 100%;
     display: block;
-    top: 0px; }
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.9); }
 
   nav {
     text-align: right;
-    line-height: 80px; }
+    line-height: 80px;
+    color: black; }
     nav > a {
-      color: white;
+      color: inherit;
       padding: 0px 12px;
-      display: inline-block;
-      text-shadow: 0 0 8px black; }
+      display: inline-block; }
       nav > a.last {
         padding-right: 24px; }
       nav > a:last-child {
@@ -2587,16 +2589,21 @@ nav .logo b {
     text-align: center;
     background: rgba(62, 87, 113, 0.9);
     color: black; }
-    .bar.mobile-footer menu a {
-      display: inline-block;
-      margin: 0px;
-      width: 22%;
-      padding-top: 6px; }
-      .bar.mobile-footer menu a i {
-        font-size: 30px; }
-      .bar.mobile-footer menu a span {
-        display: block;
-        font-size: 12px; }
+    .bar.mobile-footer menu {
+      padding-left: 0px;
+      padding-top: 0px;
+      margin-top: 8px;
+      font-family: Arial;
+      font-weight: bold; }
+      .bar.mobile-footer menu a {
+        display: inline-block;
+        margin: 0px;
+        width: 22%; }
+        .bar.mobile-footer menu a i {
+          font-size: 30px; }
+        .bar.mobile-footer menu a span {
+          display: block;
+          font-size: 12px; }
 
 attr {
   position: relative;
@@ -2659,7 +2666,7 @@ body {
   font-size: 20px;
   font-weight: 300; }
 
-h1, #intro .ribbon, h2, h3, .button-jumbo, .btn.btn-large {
+h1, #intro .ribbon, h2, h3, .button-jumbo, .button.btn-large, #faq-submit input.btn-large.submit {
   font-weight: bold; }
 
 input, div.gm-iw div, div.gm-style-mtc div, div.gm-style-cc div {
@@ -2669,8 +2676,11 @@ img {
   max-width: 100%;
   height: auto; }
 
+hr {
+  border: 2px solid rgba(0, 0, 0, 0.5); }
+
 header, section, footer, .footnote {
-  position: relatve;
+  position: relative;
   overflow: hidden;
   padding: 30px 0px;
   background: white; }
@@ -2692,18 +2702,49 @@ header, section, footer, .footnote {
   border-radius: 6px;
   margin-right: 0.2em; }
 
-.btn {
+.button, #faq-submit input.submit {
   background: #f15823;
   color: white;
-  border: 1px solid #a4320a;
-  transition: background-color .15s, scale .15s;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transition: background-color .2s, box-shadow .1s;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+  text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
   outline: none; }
-  .btn:hover {
+  .button:hover, #faq-submit input.submit:hover {
+    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
     background-color: #f37549; }
-  .btn:active, .btn:focus {
-    background-color: #dd430e;
-    -webkit-transform: scale(0.9); }
+  .button:active, #faq-submit input.submit:active, .button:focus, #faq-submit input.submit:focus {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    background-color: #dd430e; }
+
+.button-orange {
+  background: #f15823;
+  color: white;
+  transition: background-color .2s, box-shadow .1s;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+  text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2); }
+  .button-orange:hover {
+    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    background-color: #f37549; }
+  .button-orange:active, .button-orange:focus {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    background-color: #dd430e; }
+
+.button-blue {
+  background: #03a9f4;
+  color: white;
+  transition: background-color .2s, box-shadow .1s;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+  text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2); }
+  .button-blue:hover {
+    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    background-color: #23b9fc; }
+  .button-blue:active, .button-blue:focus {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    background-color: #038dcc; }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5; }
 
 .dark-text-shadow {
   text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px; }
@@ -2777,10 +2818,13 @@ img {
 
 #intro {
   color: black;
-  background: url(/images/dc-from-above.jpg);
+  background: url(/images/dc-capitol-side.jpg);
   background-size: cover;
   background-position: middle;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px; }
   #intro:before {
     position: absolute;
     content: ' ';
@@ -2788,11 +2832,39 @@ img {
     left: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     z-index: 100; }
   #intro * {
     position: relative;
     z-index: 200; }
+  #intro .middled {
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  #intro .logo {
+    line-height: 14px;
+    text-align: center;
+    font-size: 180px;
+    font-weight: 200; }
+  #intro h1, #intro .ribbon {
+    font-size: 80px; }
+  #intro hr {
+    max-width: 300px;
+    margin: -20px auto 10px auto;
+    border: 2px solid rgba(0, 0, 0, 0.5); }
+  #intro .circle {
+    width: 140px;
+    height: 140px;
+    padding-top: 25px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    margin: -60px -30px 0 -30px; }
   #intro .ribbon {
     font-size: 80px;
     display: block;

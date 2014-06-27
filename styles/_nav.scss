@@ -16,21 +16,26 @@ nav {
     }
 
     div.has-nav {
-        position: absolute;
-        z-index: 50;
+        position: fixed;
+        z-index: 9001;
         width: 100%;
         display: block;
         top: 0px;
+        left: 0px;
+        background: rgba(255,255,255,.9);
     }
 
     nav {
         text-align: right;
         line-height: 80px;
+        color: black;
+
         & > a {
-            color: white;
+            color: inherit;
+            // color: white;
             padding: 0px 12px;
             display: inline-block;
-            text-shadow: 0 0 8px black;
+            // text-shadow: 0 0 8px black;
             &.last {
                 padding-right: 24px;
             }
@@ -208,11 +213,15 @@ nav {
         background: rgba(62, 87, 113, 0.9);
         color: black;
         menu {
+            padding-left: 0px;
+            padding-top: 0px;
+            margin-top: 8px;
+            font-family: Arial;
+            font-weight: bold;
             a {
                 display: inline-block;
                 margin: 0px;
                 width: 22%;
-                padding-top: 6px;
                 i {
                     font-size: 30px;
                 }

@@ -104,8 +104,12 @@ img {
   height: auto; 
 }
 
+hr {
+  border: 2px solid rgba(0,0,0,.5);
+}
+
 header, section, footer, .footnote {
-  position: relatve; overflow: hidden;
+  position: relative; overflow: hidden;
   padding: 30px 0px;
   background: white
 }
@@ -133,12 +137,25 @@ header, section, footer, .footnote {
   margin-right: 0.2em;
 }
 
-.btn {
-  @include button-subtle($orange);
+.button {
+  @include button-inset($orange);
   outline: none;
   &.btn-large {
     @extend .button-jumbo;
   }
+}
+
+.button-orange {
+  @include button-inset($orange);
+}
+
+.button-blue {
+  @include button-inset($blue);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .dark-text-shadow {
@@ -233,10 +250,13 @@ img {
 #intro {
   // background: rgba(223, 245, 255, 1);
   color: black;
-  background: url(/images/dc-from-above.jpg); 
+  background: url(/images/dc-capitol-side.jpg); 
   background-size: cover;
   background-position: middle;
   padding-bottom: 0px;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
   &:before {
     position: absolute;
     content: ' ';
@@ -244,12 +264,43 @@ img {
     left: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,.6);
     z-index: 100;
   }
   * {
     position: relative;
     z-index: 200;
+  }
+  .middled {
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  .logo {
+    line-height: 14px;
+    text-align: center;
+    font-size: 180px;
+    font-weight: 200;
+    // letter-spacing: -10px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  hr {
+    max-width: 300px;
+    margin: -20px auto 10px auto;
+    border: 2px solid rgba(0,0,0,.5);
+  }
+  .circle {
+    width: 140px;
+    height: 140px;
+    padding-top: 25px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    margin: -60px -30px 0 -30px;
   }
   .ribbon {
     @extend h1;
@@ -265,6 +316,7 @@ img {
     margin-left: -10px;
     position: relative;
   }
+
   .lead {
     font-size: 36px;
     margin-top: 0px;
