@@ -6,16 +6,63 @@
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-	<header id="intro">
-		<div class="c text-center">
-			<img src="/vectors/logo-symbol.png" class="capital" width="700" height="458" alt="">
-			<a href="#top" class="ribbon">HackDC</a>
-			<br>
-			<p class="lead">August 29-31 in TBD</p>
-			<p class="lead">A 24-hour coding competition for high school students.</p>
-			<p class="lead text-center"><a href="/register">Registeration Opening Soon!</a> <a href=""></a></p>
+	<div class="has-nav">
+		<div class="c">
+			<nav id="nav" class="nav nav-vertical nav-left" role="navigation">
+				<a href="#hackDC" class="logo"><b>HackDC</b></a>
+				<a href="#about">About</a>
+				<a href="#venue">Venue</a>
+				<a href="#faq">FAQ</a>
+				<a href="#schedule">Schedule</a>
+				<a href="#workshops">Workshops</a>
+				<a href="#prizes">Prizes</a>
+				<a href="#sponsors">Sponsors</a>
+			</nav>
 		</div>
-		<div class="waves"></div>
+		<div class="bar mobile-header">
+		    <a id="toggle-nav" href="#" onclick="$(&quot;body&quot;).toggleClass(&quot;nav-push&quot;);$(&quot;nav&quot;).toggleClass(&quot;nav-open&quot;);"><i class="icon-grid"></i> <!-- <span class="sr-only">MENU</span> --></a>
+		    <a href="/"><span class="logo"><b>HackDC</b></span></a>
+		    <a href="#" id="twitter" class="right"><i class="icon-ol-search"></i></a>
+		</div>
+		<div class="bar mobile-footer">
+		    <menu>
+		        <a href="#top">
+		            <i class="icon-ol-shop"></i>
+		            <span>Home</span>
+		        </a>
+		        <a href="#schedule">
+		            <i class="icon-ol-calendar"></i>
+		            <span>Schedule</span>
+		        </a>
+		        <a href="#prizes">
+		            <i class="icon-ol-bulb"></i>
+		            <span>Prizes</span>
+		        </a>
+		        <a href="/chat">
+		            <i class="icon-ol-bubble"></i>
+		            <span>Chat</span>
+		        </a>
+		    </menu>
+		</div>
+	</div>
+	<header id="intro">
+		<div class="middled">
+			<div class="c text-center">
+				<div class="logo">
+					<img src="/vectors/bracket-left.png" height="140" width="28" alt="">
+					<div class="circle">
+						<img src="/vectors/logo-symbol-transparent.png" class="capital" width="120" alt="">
+					</div>
+					<img src="/vectors/bracket-right.png" height="140" width="28" alt="">
+				</div>
+				<h1>HackDC</h1>
+				<hr>
+				<p class="lead">August 29-31 in TBD</p>
+				<p class="lead"><b>A 24-hour coding competition for high school students.</b></p>
+				<br>
+				<p class="lead text-center"><a href="/soon" class="button button-jumbo button-orange disabled" disabled><i class="icon-ol-user"></i> Registration Opening Soon</a> <a href=""></a> <a href="#sponsors" class="button button-jumbo button-blue"><i class="icon-ol-like"></i> Sponsor Us!</a> <a href=""></a></p>
+			</div>
+		</div>
 	</header>
 	<!-- <header>
 		<div class="c">
@@ -26,6 +73,7 @@
 			<a class="button register-button button-jumbo" href="#">Register</a>
 		</div>
 	</header> -->
+	<span id="about"></span>
 	<section id="learn" class="padded">
 		<div class="c">
 			<div class="row">
@@ -67,7 +115,7 @@
 			<div class="row">
 				<div class="col-40">
 					<div class="white-box">
-						<h2><span class="highlight">Take home over $5000 in prizes.</span> <i class="icon-ol-shirt"></i></h2>
+						<h2><span class="highlight">Over $5000 in prizes.</span> <i class="icon-ol-shirt"></i></h2>
 						<p>Have you hard work pay off with awesome prizes and swag. Compete for sponsor and API prizes, or compete to be titled one of the top 3 hacks of the event. We also have tons of free swag and giveaways for all hackers.</p>
 						<div class="bottom">
 							<a href="#prizes">Peek at our Prizes <i class="icon-pointer-right"></i></a>
@@ -152,79 +200,79 @@
 		<div class="c">
 			<form action="/" class="">
 				<h3>Did we miss your question?</h3>
-				<textarea class="question" name="question" id="" cols="30" rows="4" placeholder="Ask us anything and we'll answer it! Alternatively, you can contact us at team(at)hackdc.org."></textarea>
-				<br>
-				<input class="submit" type="submit" value="submit">
+				<textarea class="question" name="question" id="" cols="36" rows="4" placeholder="Ask us anything and we'll answer it! Alternatively, you can contact us at team(at)hackdc.org."></textarea>
+					&nbsp;&nbsp;
+				<input class="submit" type="submit" value="Send it our way!" style="vertical-align: top;">
 			</form>
 		</div>
 	</section>
 	<section id="schedule">
 		<div class="c">
 			<h1>Schedule</h1>
-
-Registration Opens
-
-12:30 pm
-
-First 50 hackers get a treat!
-Registration Closes
-
-1:00 pm
-
-Hackers are welcome to enter later, but everyone should be in by now.
-Keynote and Opening Ceremony
-
-1:15 pm
-
-With a special guest!
-Hacking Starts
-
-2:00 pm
-
-It begins.
-Dinner
-
-7:30 pm
-Midnight Surprise
-
-12:00 am
-
-Just a nice little treat.
-Early Bird Breakfast
-
-6:00 am
-Normal Breakfast
-
-8:00 am
-
-It begins.
-Lunch
-
-1:00 pm
-Hacking Ends
-
-All projects must be submitted. Hands off the keyboards!
-
-2:00 pm
-
-It begins.
-Project Expo
-
-Ship it.
-
-2:30 pm
-Presentation and Prizes!
-
-Top 10 hacks and API winners demo their projects. Swag and Prizes given out.
-
-4:00 pm
-
-It begins.
-All good things must come to an end.
-
-Pack and clean up. See you again next year!
-
-6:00 pm
+			<div class="event">
+				<h3>Registration Opens</h3>
+				<span class="time">12:30 pm</span>
+				<p>	First 50 hackers get a treat!</p>
+			</div>
+			<div class="event">
+				<h3>Registration Closes</h3>
+				<span class="time">1:00 pm</span>
+				<p>Hackers are welcome to enter later, but everyone should be in by now.</p>
+			</div>
+			<div class="event">
+				<h3>Keynote and Opening Ceremony</h3>
+				<span class="time">1:15 pm</span>
+				<p>With a special guest!</p>
+			</div>
+			<div class="event">
+				<h3>Hacking Starts</h3>
+				<span class="time">2:00 pm</span>
+				<p>It begins.</p>
+			</div>
+			<div class="event">
+				<h3>Dinner</h3>
+				<span class="time">7:30 pm</span>
+				<p>Food TBD</p>
+			</div>
+			<div class="event">
+				<h3>Midnight Surprise</h3>
+				<span class="time">12:00 am</span>
+				<p>Just a nice little treat.</p>
+			</div>
+			<div class="event">
+				<h3>Early Bird Breakfast</h3>
+				<span class="time">6:00 am</span>
+				<p>Fiid TBD</p>
+			</div>
+			<div class="event">
+				<h3>Normal Breakfast</h3>
+				<span class="time">8:00 am</span>
+				<p>It begins.</p>
+			</div>
+			<div class="event">
+				<h3>Lunch</h3>
+				<span class="time">1:00 pm</span>
+				<p>Food TBD.</p>
+			</div>
+			<div class="event">
+				<h3>Hacking Ends</h3>
+				</span>2:00 pm</span>
+				<p>All projects must be submitted. Hands off the keyboards!</p>
+			</div>
+			<div class="event">
+				<h3>Project Expo</h3>
+				<span class="time">2:30 pm</span>
+				<p>Ship it.</p>
+			<div class="event">
+				<h3>Presentation and Prizes!</h3>
+				<span class="time">4:00 pm</span>
+				<p>Top 10 hacks and API winners demo their projects. Swag and Prizes given out.</p>
+			</div>
+			<div class="event">
+				<h3>Bye!</h3>
+				<span class="time">6:00 pm</span>
+				<p>Pack and clean up. See you again next year!</p>
+			</div>
 		</div>
 	</section>
 	<section id="sponsors">
@@ -237,27 +285,24 @@ Pack and clean up. See you again next year!
 	<section id="more">
 		<div class="c">
 			<h1>Stay Connected</h1>
-More info
-
-Need something else? Drop us a line at team@hackdc.org or talk to anyone on our team.
-Connect with us!
-
-Location
-
-Name of Some Venue,
-Street Address
-City, VA. 20171 
-
-More info
-
-Need something else? Drop us a line at team@hackdc.org or talk to anyone on our team.
-Connect with us!
-
-Location
-
-Name of Some Venue,
-Street Address
-City, VA. 20171 
+			<div class="row">
+				<div class="col-33">
+					<h2>More Info</h2>
+					<p>Need something else? Drop us a line at team@hackdc.org or talk to anyone on our team.</p>
+				</div>
+				<div class="col-33">
+					<h2>Connect with us!</h2>
+					<p>Social media links</p>
+				</div>
+				<div class="col-33">
+					<h2>Venue Address</h2>
+					<p>
+						Name of Some Venue,
+						Street Address
+						City, VA. 20171 
+					</p>
+				</div>
+			</div>
 		</div>
 	</section>
 </body>
