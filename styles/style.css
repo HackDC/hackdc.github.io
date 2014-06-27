@@ -110,7 +110,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1 {
+h1, #intro .ribbon {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -2200,7 +2200,7 @@ body {
   font-size: 17px;
   line-height: 1.5em; }
 
-h1, h2, h3, h4, h5 {
+h1, #intro .ribbon, h2, h3, h4, h5 {
   font-weight: bold;
   color: inherit;
   line-height: 1.2em;
@@ -2208,7 +2208,7 @@ h1, h2, h3, h4, h5 {
   text-rendering: optimizelegibility;
   -webkit-text-rendering: optimizelegibility; }
 
-h1 {
+h1, #intro .ribbon {
   font-size: 60px; }
 
 h2 {
@@ -2248,7 +2248,7 @@ p.hero {
   body {
     font-size: 16px; }
 
-  h1 {
+  h1, #intro .ribbon {
     font-size: 50px; }
 
   p.lead {
@@ -2343,20 +2343,20 @@ window {
   background: #FFF;
   border: 5px solid #03a9f4;
   color: black; }
-  window h1 {
+  window h1, window #intro .ribbon, #intro window .ribbon {
     background: #03a9f4;
     color: white;
     margin: 0px;
     padding: 10px;
     font-size: 30px; }
-    window h1 a {
+    window h1 a, window #intro .ribbon a, #intro window .ribbon a {
       color: white;
       opacity: 0.5;
       transition: all 0.25s;
       -webkit-transition: all 0.25s;
       transform-origin: center;
       -webkit-transform-origin: center; }
-      window h1 a:hover {
+      window h1 a:hover, window #intro .ribbon a:hover, #intro window .ribbon a:hover {
         opacity: 1;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg); }
@@ -2371,10 +2371,10 @@ window {
     height: 100%;
     overflow: auto;
     z-index: 2000; }
-    window.fullscreen h1, window.metro h1 {
+    window.fullscreen h1, window.fullscreen #intro .ribbon, #intro window.fullscreen .ribbon, window.metro h1, window.metro #intro .ribbon, #intro window.metro .ribbon {
       line-height: 66px;
       padding: 0px 12px 0 36px; }
-      window.fullscreen h1 a, window.metro h1 a {
+      window.fullscreen h1 a, window.fullscreen #intro .ribbon a, #intro window.fullscreen .ribbon a, window.metro h1 a, window.metro #intro .ribbon a, #intro window.metro .ribbon a {
         margin-top: 3px;
         transform-origin: center;
         -webkit-transform-origin: center; }
@@ -2434,7 +2434,7 @@ modal.visible window {
     margin-left: 0 !important;
     height: 100%;
     overflow: auto; }
-    modal window h1 {
+    modal window h1, modal window #intro .ribbon, #intro modal window .ribbon {
       line-height: 66px;
       padding: 0px 10px 0px 76px !important; } }
 nav ul {
@@ -2659,7 +2659,7 @@ body {
   font-size: 20px;
   font-weight: 300; }
 
-h1, h2, h3, .button-jumbo, .btn.btn-large {
+h1, #intro .ribbon, h2, h3, .button-jumbo, .btn.btn-large {
   font-weight: bold; }
 
 input, div.gm-iw div, div.gm-style-mtc div, div.gm-style-cc div {
@@ -2739,13 +2739,19 @@ a {
     width: auto;
     display: block;
     margin-top: -2.4em; }
-  .linearound h1, .linearound h2 {
+  .linearound h1, .linearound #intro .ribbon, #intro .linearound .ribbon, .linearound h2 {
     display: inline-block;
     text-align: center;
     font-size: 60px;
     color: #7d7d7d;
     background: white;
     padding: 0px 20px; }
+
+.love {
+  color: #e74c3c; }
+
+.highlight {
+  background: #fff4d7; }
 
 .white-box, #faq .qna {
   border-radius: 4px;
@@ -2757,19 +2763,50 @@ a {
   margin: 5px;
   padding: 20px;
   background: white; }
-  .white-box h1, #faq .qna h1, .white-box h2, #faq .qna h2, .white-box h3, #faq .qna h3 {
+  .white-box h1, #faq .qna h1, .white-box #intro .ribbon, #intro .white-box .ribbon, #faq .qna #intro .ribbon, #intro #faq .qna .ribbon, .white-box h2, #faq .qna h2, .white-box h3, #faq .qna h3 {
     color: black;
     line-height: 1em;
     margin: 0px;
     border-bottom: 1px solid; }
-    .white-box h1 i, #faq .qna h1 i, .white-box h2 i, #faq .qna h2 i, .white-box h3 i, #faq .qna h3 i {
+    .white-box h1 i, #faq .qna h1 i, .white-box #intro .ribbon i, #intro .white-box .ribbon i, #faq .qna #intro .ribbon i, #intro #faq .qna .ribbon i, .white-box h2 i, #faq .qna h2 i, .white-box h3 i, #faq .qna h3 i {
       float: right; }
 
-header {
-  background: #384452;
-  color: white; }
-  header .logo {
-    font-size: 85px; }
+#intro {
+  color: black; }
+  #intro .ribbon {
+    font-size: 80px;
+    display: block;
+    line-height: 146px;
+    vertical-align: middle;
+    background: url(/vectors/logo-ribbon.png);
+    background-size: 550px 146px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -122px;
+    margin-left: -10px;
+    position: relative; }
+  #intro .lead {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+.waves {
+  display: block;
+  position: relative;
+  height: 80px;
+  background: url(/vectors/wave.png);
+  background-repeat: repeat-x;
+  background-size: 80px 60px; }
+  .waves:after {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background: url(/vectors/wave-water.png);
+    background-repeat: repeat-x;
+    background-size: 160px 120px; }
 
 #learn {
   background: #60d317; }
