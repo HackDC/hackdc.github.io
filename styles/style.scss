@@ -132,7 +132,7 @@ header, section, footer, .footnote {
 }
 
 .button {
-  @extend .button-large;
+  // @extend .button-large;
   border-radius: 6px;
   margin-right: 0.2em;
 }
@@ -362,6 +362,12 @@ img {
   // background: $purple;
 }
 
+// Schedule
+#schedule {
+  .event {
+  }
+}
+
 // FAQ
 #faq {
   background: $red;
@@ -390,6 +396,32 @@ img {
   @include button-subtle($red);
 }
 
+// Sponsors
+#sponsors {
+  .white-box {
+    min-height: 375px;
+    margin-bottom: 1.3em;
+    p {
+      margin-bottom: 2px;
+    }
+    &.editable {
+      height: 375px;
+      overflow: hidden;
+      h3, p {
+        border: 1px dotted black;
+      }
+    }
+  }
+}
+.white-box .brand {
+  text-align: center;
+  margin: -20px -20px 15px -20px;
+  height: 150px;
+  line-height: 150px;
+  background: black;
+  color: white;
+}
+
 // Footer
 #more {
   background: $navy;
@@ -397,4 +429,17 @@ img {
 }
 
 @media screen and (max-width: $mobile) {
+  #sponsors {
+    .brand, p, .editable {
+      display: none;
+    }
+    .white-box {
+      min-height: 0px;
+      margin-bottom: 10px;
+    }
+    h3, .buttons {
+      display: inline-block;
+      border-bottom: none;
+    }
+  }
 }
