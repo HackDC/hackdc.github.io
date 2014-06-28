@@ -131,6 +131,17 @@ header, section, footer, .footnote {
   color: white;
 }
 
+// Grid overrides
+.row {
+  [class^=col]:first-child {
+    padding-left: 0px;
+  }
+  [class^=col]:last-child {
+    padding-right: 0px;
+  }
+}
+
+// Buttons
 .button {
   // @extend .button-large;
   border-radius: 6px;
@@ -362,10 +373,17 @@ img {
   // background: $purple;
 }
 
-
+// About
 #about {
 
 }
+
+// Venue
+#venue {
+  background: $navy;
+  color: white;
+}
+
 
 // Schedule
 #schedule {
