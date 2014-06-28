@@ -2785,7 +2785,7 @@ img {
       position: relative;
       height: auto;
       padding: 20px 0; }
-    #intro h1, #intro .ribbon, #intro p.lead:first-of-type {
+    #intro h1, #intro .ribbon {
       display: none; }
     #intro hr {
       margin-top: 20px; }
