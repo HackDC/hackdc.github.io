@@ -362,6 +362,11 @@ img {
   // background: $purple;
 }
 
+
+#about {
+
+}
+
 // Schedule
 #schedule {
   .event {
@@ -436,8 +441,25 @@ img {
 }
 
 @media screen and (max-width: $mobile) {
+  .mobile-transition {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+  }
+  .button {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .button-jumbo, .button-large {
+    display: block;
+  }
+  .button-jumbo {
+    font-size: 24px;
+  }
+  .button-large {
+    font-size: 20px;
+  }
   h1 {
     font-size: 32px;
+    text-align: center;
   }
   h2 {
     font-size: 28px;
@@ -446,21 +468,68 @@ img {
     font-size: 24px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 6px 0;
   }
   p.lead {
     font-size: 22px;
   }
   #intro {
     height: auto!important;
+    min-height: 300px;
     max-height: 1080px;
     .middled {
       position: relative;
       height: auto;
       padding: 20px 0;
     }
+    h1, p.lead:first-of-type {
+      display: none;
+    }
+    hr {
+      margin-top: 20px;
+    }
+    p.lead {
+      font-size: 28px;
+    }
+  }
+  // FAQ: collapsable questions
+  #faq .qna {
+    cursor: pointer;
+    h3 {
+      font-size: 18px;
+    }
+    h3, .question {
+      border-bottom-color: white;
+      @extend .mobile-transition;
+    }
+    p, .answer {
+      @extend .mobile-transition;
+      height: 0px;
+      overflow: hidden;
+      margin: 0px;
+    }
+    &.expanded {
+      h3, .question {
+        border-bottom-color: black;
+      }
+      p, .answer {
+        height: auto;
+        margin: 8px 0px;
+      }
+    }
+  }
+  #faq-submit {
+    display: none;
+  }
+  // Sponsors: name and website
+  header .button-blue {
+    display: none;
   }
   #sponsors {
+    // Or hide them on mobile
+    display: none;
     .brand, p, .editable {
       display: none;
     }
@@ -471,6 +540,11 @@ img {
     h3, .buttons {
       display: inline-block;
       border-bottom: none;
+    }
+    // Center smaller headings
+    #faq-submit h2, #more h2 {
+      font-size: 32px;
+      text-align: center;
     }
   }
 }

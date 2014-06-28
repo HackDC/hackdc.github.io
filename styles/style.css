@@ -2433,12 +2433,12 @@ header, section, footer, .footnote {
   outline: none;
   font-weight: normal; }
   .button:hover, #faq-submit input.submit:hover {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #f37549; }
   .button:active, #faq-submit input.submit:active, .button:focus, #faq-submit input.submit:focus {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #dd430e; }
 
 .button-orange {
@@ -2450,12 +2450,12 @@ header, section, footer, .footnote {
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
   text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2); }
   .button-orange:hover {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #f37549; }
   .button-orange:active, .button-orange:focus {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #dd430e; }
 
 .button-blue {
@@ -2467,12 +2467,12 @@ header, section, footer, .footnote {
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
   text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2); }
   .button-blue:hover {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #23b9fc; }
   .button-blue:active, .button-blue:focus {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #038dcc; }
 
 .button-green {
@@ -2484,12 +2484,12 @@ header, section, footer, .footnote {
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
   text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2); }
   .button-green:hover {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(100, 100, 100, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #74e82b; }
   .button-green:active, .button-green:focus {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
     background-color: #4fae13; }
 
 .disabled {
@@ -2728,8 +2728,25 @@ img {
   color: white; }
 
 @media screen and (max-width: 767px) {
+  .mobile-transition, #faq .qna h3, #faq .qna .question, #faq .qna p, #faq .qna .answer {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out; }
+
+  .button, #faq-submit input.submit {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
+
+  .button-jumbo, .button.btn-large, #faq-submit input.btn-large.submit, .button-large {
+    display: block; }
+
+  .button-jumbo, .button.btn-large, #faq-submit input.btn-large.submit {
+    font-size: 24px; }
+
+  .button-large {
+    font-size: 20px; }
+
   h1, #intro .ribbon {
-    font-size: 32px; }
+    font-size: 32px;
+    text-align: center; }
 
   h2 {
     font-size: 28px; }
@@ -2738,24 +2755,60 @@ img {
     font-size: 24px; }
 
   p {
-    font-size: 18px; }
+    font-size: 16px;
+    line-height: 18px;
+    margin: 6px 0; }
 
   p.lead {
     font-size: 22px; }
 
   #intro {
     height: auto !important;
+    min-height: 300px;
     max-height: 1080px; }
     #intro .middled {
       position: relative;
       height: auto;
       padding: 20px 0; }
+    #intro h1, #intro .ribbon, #intro p.lead:first-of-type {
+      display: none; }
+    #intro hr {
+      margin-top: 20px; }
+    #intro p.lead {
+      font-size: 28px; }
 
-  #sponsors .brand, #sponsors p, #sponsors .editable {
+  #faq .qna {
+    cursor: pointer; }
+    #faq .qna h3 {
+      font-size: 18px; }
+    #faq .qna h3, #faq .qna .question {
+      border-bottom-color: white; }
+    #faq .qna p, #faq .qna .answer {
+      height: 0px;
+      overflow: hidden;
+      margin: 0px; }
+    #faq .qna.expanded h3, #faq .qna.expanded .question {
+      border-bottom-color: black; }
+    #faq .qna.expanded p, #faq .qna.expanded .answer {
+      height: auto;
+      margin: 8px 0px; }
+
+  #faq-submit {
     display: none; }
-  #sponsors .white-box, #sponsors #faq .qna, #faq #sponsors .qna {
-    min-height: 0px;
-    margin-bottom: 10px; }
-  #sponsors h3, #sponsors .buttons {
-    display: inline-block;
-    border-bottom: none; } }
+
+  header .button-blue {
+    display: none; }
+
+  #sponsors {
+    display: none; }
+    #sponsors .brand, #sponsors p, #sponsors .editable {
+      display: none; }
+    #sponsors .white-box, #sponsors #faq .qna, #faq #sponsors .qna {
+      min-height: 0px;
+      margin-bottom: 10px; }
+    #sponsors h3, #sponsors .buttons {
+      display: inline-block;
+      border-bottom: none; }
+    #sponsors #faq-submit h2, #sponsors #more h2 {
+      font-size: 32px;
+      text-align: center; } }
