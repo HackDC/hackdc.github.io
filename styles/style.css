@@ -2704,7 +2704,7 @@ img {
   #sponsors .white-box p, #sponsors #faq .qna p, #faq #sponsors .qna p {
     margin-bottom: 2px; }
   #sponsors .white-box.editable, #sponsors #faq .editable.qna, #faq #sponsors .editable.qna {
-    height: 375px;
+    max-height: 500px;
     overflow: hidden; }
     #sponsors .white-box.editable h3, #sponsors #faq .editable.qna h3, #faq #sponsors .editable.qna h3, #sponsors .white-box.editable p, #sponsors #faq .editable.qna p, #faq #sponsors .editable.qna p {
       border: 1px dotted black; }
@@ -2715,13 +2715,42 @@ img {
   height: 150px;
   line-height: 150px;
   background: black;
-  color: white; }
+  color: white;
+  overflow: hidden; }
+  .white-box .brand img, #faq .qna .brand img {
+    vertical-align: middle;
+    max-width: 85%;
+    max-height: 95%;
+    margin: auto; }
 
 #more {
   background: #384452;
   color: white; }
 
 @media screen and (max-width: 767px) {
+  h1, #intro .ribbon {
+    font-size: 32px; }
+
+  h2 {
+    font-size: 28px; }
+
+  h3 {
+    font-size: 24px; }
+
+  p {
+    font-size: 18px; }
+
+  p.lead {
+    font-size: 22px; }
+
+  #intro {
+    height: auto !important;
+    max-height: 1080px; }
+    #intro .middled {
+      position: relative;
+      height: auto;
+      padding: 20px 0; }
+
   #sponsors .brand, #sponsors p, #sponsors .editable {
     display: none; }
   #sponsors .white-box, #sponsors #faq .qna, #faq #sponsors .qna {

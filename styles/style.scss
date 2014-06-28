@@ -405,7 +405,7 @@ img {
       margin-bottom: 2px;
     }
     &.editable {
-      height: 375px;
+      max-height: 500px;
       overflow: hidden;
       h3, p {
         border: 1px dotted black;
@@ -420,6 +420,13 @@ img {
   line-height: 150px;
   background: black;
   color: white;
+  overflow: hidden;
+  img {
+    vertical-align: middle;
+    max-width: 85%;
+    max-height: 95%;
+    margin: auto;
+  }
 }
 
 // Footer
@@ -429,6 +436,30 @@ img {
 }
 
 @media screen and (max-width: $mobile) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+  }
+  p.lead {
+    font-size: 22px;
+  }
+  #intro {
+    height: auto!important;
+    max-height: 1080px;
+    .middled {
+      position: relative;
+      height: auto;
+      padding: 20px 0;
+    }
+  }
   #sponsors {
     .brand, p, .editable {
       display: none;
