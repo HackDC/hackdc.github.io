@@ -23,6 +23,26 @@
 </head>
 <body>
 	<span id="top"></span>
+	<header id="intro">
+		<div class="middled">
+			<div class="c text-center">
+				<div class="logo">
+					<img src="/vectors/bracket-left.png" height="140" width="28" alt="">
+					<img src="/vectors/washington-monument.png" class="capital" width="35" alt="">
+					<!-- <div class="circle">
+						<img src="/vectors/logo-symbol-transparent.png" class="capital" width="120" alt="">
+					</div> -->
+					<img src="/vectors/bracket-right.png" height="140" width="28" alt="">
+				</div>
+				<h1>HackDC</h1>
+				<hr>
+				<p class="lead">September 20-21 in TBD</p>
+				<p class="lead"><b>A 24-hour coding competition for high school students.</b></p>
+				<br>
+				<p class="lead text-center"><a href="/soon" class="button button-jumbo button-orange disabled" disabled><i class="icon-ol-user"></i> Register Soon!</a> <a href="#sponsors" class="button button-jumbo button-green"><i class="icon-ol-megaphone"></i> Become a Mentor!</a> <a href="#sponsors" class="button button-jumbo button-blue"><i class="icon-ol-like"></i> Sponsor Us!</a> </p>
+			</div>
+	</div>
+	</header>
 	<div class="has-nav">
 		<div class="c">
 			<nav id="nav" class="nav nav-vertical nav-left" role="navigation">
@@ -30,9 +50,9 @@
 				<a href="#about">About</a>
 				<a href="#venue">Venue</a>
 				<a href="#schedule">Schedule</a>
-				<a href="#workshops">Workshops</a>
+				<!-- <a href="#workshops">Workshops</a> -->
 				<a href="#prizes">Prizes</a>
-				<a href="#sponsors">Sponsors</a>
+				<a href="#sponsors" class="hidden-mobile">Sponsors</a>
 				<a href="#faq">FAQ</a>
 			</nav>
 		</div>
@@ -62,25 +82,6 @@
 		    </menu>
 		</div>
 	</div>
-	<header id="intro">
-		<div class="middled">
-			<div class="c text-center">
-				<div class="logo">
-					<img src="/vectors/bracket-left.png" height="140" width="28" alt="">
-					<div class="circle">
-						<img src="/vectors/logo-symbol-transparent.png" class="capital" width="120" alt="">
-					</div>
-					<img src="/vectors/bracket-right.png" height="140" width="28" alt="">
-				</div>
-				<h1>HackDC</h1>
-				<hr>
-				<p class="lead">September 20-21 in TBD</p>
-				<p class="lead"><b>A 24-hour coding competition for high school students.</b></p>
-				<br>
-				<p class="lead text-center"><a href="/soon" class="button button-jumbo button-orange disabled" disabled><i class="icon-ol-user"></i> Register Soon!</a> <a href="#sponsors" class="button button-jumbo button-green"><i class="icon-ol-megaphone"></i> Become a Mentor!</a> <a href="#sponsors" class="button button-jumbo button-blue"><i class="icon-ol-like"></i> Sponsor Us!</a> </p>
-			</div>
-		</div>
-	</header>
 	<div id="about">
 		<div class="c padded">
 			<div class="row">
@@ -115,16 +116,27 @@
 		</div>
 	</div>
 	<div id="venue">
-		<div class="c">
+		<div class="c padded">
 			<h1>Pied Piper</h1>
 			<p>Hack the night away at Pied Piper! Actually, we are still confirming a venue but in the meantime...</p>
-			<p>
-			Pied Piper S. a. r. l.<br>
-			808 Big Data Road<br>
-			Silicon Alley, VA. 20171
-			</p>
-			<a href="https://maps.google.com/?daddr=White+House" class="button button-green button-large" target="_blank"><i class="icon-ol-location"></i> Get Directions</a>
-			<a href="http://piedpiper.com/" target="_blank" class="button button-blue button-large"><i class="icon-planet"></i> piedpiper.com</a>
+			<div class="row">
+				<div class="col-40">
+					<h3>About Pied Piper</h3>
+				</div>
+				<div class="col-25">
+					<h3>Address</h3>
+					<p>
+					Pied Piper S. a. r. l.<br>
+					808 Big Data Road<br>
+					Silicon Alley, VA. 20171
+					</p>
+					<a href="https://maps.google.com/?daddr=White+House" class="button button-green button-large" target="_blank"><i class="icon-ol-location"></i> Get Directions</a>
+				</div>
+				<div class="col-35">
+					<h3>Getting There</h3>
+					<a href="http://piedpiper.com/" target="_blank" class="button button-blue button-large"><i class="icon-planet"></i> piedpiper.com</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!--<section id="learn" class="padded">
@@ -185,6 +197,7 @@
 	</section> -->
 	<section id="schedule">
 		<div class="c">
+			<div class="pole"></div>
 			<h1>Schedule</h1>
 			<div class="event white-box">
 				<h3>Registration Opens</h3>
@@ -253,12 +266,12 @@
 			</div>
 		</div>
 	</section>
-	<div id="workshops">
+	<!-- <div id="workshops">
 		<div class="c">
 			<h1>Workshops</h1>
 			<p>Coming soon!</p>
 		</div>
-	</div>
+	</div> -->
 	<div id="prizes">
 		<div class="c">
 			<h1>Prizes</h1>
@@ -355,6 +368,27 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(0, 62, 212)"><img src="/images/logos/mhacks.png" alt=""></div>
+						<h3>MHacks</h3>
+						<p>The most epic hackathon ever, at the University of Michigan.</p>
+						<a href="http://mhacks.org/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> mhacks.com</a>
+					</div>
+				</div>
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/hackru.png" alt=""></div>
+						<h3>HackRU</h3>
+						<p>The longest-running college hackathon, at Rutgers University.</p>
+						<a href="http://hackru.org/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> hackru.org</a>
+					</div>
+				</div>
+				<div class="col-33">
+					
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="faq">
@@ -363,21 +397,21 @@
 			<div class="row">
 				<div class="col-50">
 
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>Who can participate?</h3>
 						<p>Any high schooler can participate, if you are starting ninth grade in the fall, you can participate too!</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>What If I don’t know how to code?</h3>
 						<p>No problem! One of the main points of a hackathon is to help teach students who have no prior coding experience, helping them create something great from scratch. We will have mentors and workshops to help you all night and day. All we ask from you is the willingness to learn and you can certainly create something you can be proud of.</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>How much does this cost?</h3>
 
 						<p>Short answer: nothing.
 						Long answer: $0.</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>What should I bring to the hackathon?</h3>
 						<p>
 							<ul class="answer">
@@ -389,7 +423,7 @@
 							</ul>
 						</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>I don't have a team!</h3>
 						<p>We'll have a team building session right before hacking starts. We'll quickly introduce ourselves and form teams however we choose. You'll make cool new friends!</p>
 					</div>
@@ -397,23 +431,23 @@
 				</div>
 				<div class="col-50">
 					
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>What do I make?</h3>
 						<p>Anything you'd like. Come up with your favorite idea and make it a reality! Use any programming languages, development stacks, APIs, and other tools you need.</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>Can I continue my awesome project I've been working on?</h3>
 						<p>Thats awesome your already hacking away. Unfortunately, all code for this event must be written during hacking window during the event, but use of public, open-source external libraries and APIs are encouraged!</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>Do I need to be at the venue at all times?</h3>
 						<p>Due to security reasons, you must stay in the building at all times. If you have an emergency or really have to leave, don't worry. We'll work it out.</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>I have some dietary restrictions.</h3>
 						<p>We've got you covered. Just mention it in the application (coming soon.)</p>
 					</div>
-					<div class="qna">
+					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>I'm not a high school student.</h3>
 						<p>Come in as a mentor to help out! Mentors with any skills related to creating products (programming, design, UX, buisiness) are welcome to help out. Mentor sign-ups will be open soon.</p>
 					</div>
@@ -456,5 +490,8 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Scripts at the bottom so that the pages load content first -->
+	<script src="/scripts/vendor/jquery-1.11.1.min.js"></script>
+	<script src="/scripts/vendor/skrollr-0.6.26.min.js"></script>
 </body>
 </html>

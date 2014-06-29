@@ -387,7 +387,18 @@ img {
 
 // Schedule
 #schedule {
+  background: $green;
+  color: white;
   .event {
+    margin-bottom: 10px;
+    max-width: 50%;
+    h3 {
+      padding-right: 70px;
+    }
+    .time {
+      float: right;
+      margin-top: -30px;
+    }
   }
 }
 
@@ -396,7 +407,6 @@ img {
   background: $red;
   color: white;
   .qna {
-    @extend .white-box;
     margin-bottom: 20px;
   }
 }
@@ -459,6 +469,9 @@ img {
 }
 
 @media screen and (max-width: $mobile) {
+  .hidden-mobile {
+    display: none;
+  }
   .mobile-transition {
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -531,7 +544,7 @@ img {
       border-bottom-color: white;
       @extend .mobile-transition;
     }
-    p, .answer {
+    p, .answer, ul, li {
       @extend .mobile-transition;
       height: 0px;
       overflow: hidden;
