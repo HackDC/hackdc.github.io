@@ -110,7 +110,7 @@ hr {
 
 header, section, footer, .footnote {
   position: relative; overflow: hidden;
-  padding: 30px 0px;
+  padding: 40px 0px;
   background: white
 }
 
@@ -384,20 +384,54 @@ img {
   color: white;
 }
 
+// Prizes
+#prizes {
+  background: $purple;
+  color: white;
+}
+
 
 // Schedule
 #schedule {
   background: $green;
   color: white;
+  .timeline {
+    width: 100%;
+    max-width: 920px;
+    margin: auto;
+    position: relative;
+  }
+  .pole {
+    background: rgba(0,0,0,.5);
+    background: $navy;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -3px;
+    width: 6px;
+    height: 100%;
+  }
   .event {
-    margin-bottom: 10px;
-    max-width: 50%;
+    width: 400px;
+    max-width: 45%;
+    margin-bottom: 50px;
     h3 {
       padding-right: 70px;
     }
     .time {
       float: right;
       margin-top: -30px;
+    }
+    &:nth-child(2n+0) {
+      float: left;
+      margin-left: 10px; 
+    }
+    &:nth-child(2n+1) {
+      // margin-top: 20px;
+      float: right;
+    }
+    &:nth-child(3) {
+      margin-top: 30px!important;
     }
   }
 }
@@ -470,7 +504,7 @@ img {
 
 @media screen and (max-width: $mobile) {
   .hidden-mobile {
-    display: none;
+    display: none!important;
   }
   .mobile-transition {
     transition: all .4s ease-in-out;
@@ -544,7 +578,7 @@ img {
       border-bottom-color: white;
       @extend .mobile-transition;
     }
-    p, .answer, ul, li {
+    p, .answer, ul {
       @extend .mobile-transition;
       height: 0px;
       overflow: hidden;
@@ -554,7 +588,7 @@ img {
       h3, .question {
         border-bottom-color: black;
       }
-      p, .answer {
+      p, .answer, ul {
         height: auto;
         margin: 8px 0px;
       }

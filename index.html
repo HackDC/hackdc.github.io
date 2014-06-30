@@ -47,17 +47,17 @@
 		<div class="c">
 			<nav id="nav" class="nav nav-vertical nav-left" role="navigation">
 				<a href="#top" class="logo"><b>HackDC</b></a>
-				<a href="#about">About</a>
-				<a href="#venue">Venue</a>
-				<a href="#schedule">Schedule</a>
+				<a href="#about"  onclick="toggleMenu();">About</a>
+				<a href="#venue"  onclick="toggleMenu();">Venue</a>
+				<a href="#schedule"  onclick="toggleMenu();">Schedule</a>
 				<!-- <a href="#workshops">Workshops</a> -->
-				<a href="#prizes">Prizes</a>
-				<a href="#sponsors" class="hidden-mobile">Sponsors</a>
-				<a href="#faq">FAQ</a>
+				<a href="#prizes"  onclick="toggleMenu();">Prizes</a>
+				<a href="#sponsors" class="hidden-mobile" onclick="toggleMenu();">Sponsors</a>
+				<a href="#faq" onclick="toggleMenu();">FAQ</a>
 			</nav>
 		</div>
 		<div class="bar mobile-header">
-		    <a id="toggle-nav" href="#" onclick="$(&quot;body&quot;).toggleClass(&quot;nav-push&quot;);$(&quot;nav&quot;).toggleClass(&quot;nav-open&quot;);"><i class="icon-grid"></i> <!-- <span class="sr-only">MENU</span> --></a>
+		    <a id="toggle-nav" href="#" onclick="toggleMenu();"><i class="icon-grid"></i> <!-- <span class="sr-only">MENU</span> --></a>
 		    <a href="/"><span class="logo"><b>HackDC</b></span></a>
 		    <a href="#" id="twitter" class="right"><i class="icon-ol-search"></i></a>
 		</div>
@@ -82,8 +82,8 @@
 		    </menu>
 		</div>
 	</div>
-	<div id="about">
-		<div class="c padded">
+	<section id="about">
+		<div class="c">
 			<div class="row">
 				<div class="col-33">
 					<div class="white-box">
@@ -114,9 +114,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="venue">
-		<div class="c padded">
+	</section>
+	<section id="venue">
+		<div class="c">
 			<h1>Pied Piper</h1>
 			<p>Hack the night away at Pied Piper! Actually, we are still confirming a venue but in the meantime...</p>
 			<div class="row">
@@ -139,7 +139,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<!--<section id="learn" class="padded">
 		<div class="c">
 			<div class="row">
@@ -200,70 +200,73 @@
 		<div class="c">
 			<div class="pole"></div>
 			<h1>Schedule</h1>
-			<div class="event white-box">
-				<h3>Registration Opens</h3>
-				<span class="time">12:30 pm</span>
-				<p>	First 50 hackers get a treat!</p>
-			</div>
-			<div class="event white-box">
-				<h3>Registration Closes</h3>
-				<span class="time">1:00 pm</span>
-				<p>Hackers are welcome to enter later, but everyone should be in by now.</p>
-			</div>
-			<div class="event white-box">
-				<h3>Keynote and Opening Ceremony</h3>
-				<span class="time">1:15 pm</span>
-				<p>With a special guest!</p>
-			</div>
-			<div class="event white-box">
-				<h3>Hacking Starts</h3>
-				<span class="time">2:00 pm</span>
-				<p>It begins.</p>
-			</div>
-			<div class="event white-box">
-				<h3>Dinner</h3>
-				<span class="time">7:30 pm</span>
-				<p>Food TBD</p>
-			</div>
-			<div class="event white-box">
-				<h3>Midnight Surprise</h3>
-				<span class="time">12:00 am</span>
-				<p>Just a nice little treat.</p>
-			</div>
-			<div class="event white-box">
-				<h3>Early Bird Breakfast</h3>
-				<span class="time">6:00 am</span>
-				<p>Fiid TBD</p>
-			</div>
-			<div class="event white-box">
-				<h3>Normal Breakfast</h3>
-				<span class="time">8:00 am</span>
-				<p>It begins.</p>
-			</div>
-			<div class="event white-box">
-				<h3>Lunch</h3>
-				<span class="time">1:00 pm</span>
-				<p>Food TBD.</p>
-			</div>
-			<div class="event white-box">
-				<h3>Hacking Ends</h3>
-				</span>2:00 pm</span>
-				<p>All projects must be submitted. Hands off the keyboards!</p>
-			</div>
-			<div class="event white-box">
-				<h3>Project Expo</h3>
-				<span class="time">2:30 pm</span>
-				<p>Ship it.</p>
-			</div>
-			<div class="event white-box">
-				<h3>Presentation and Prizes!</h3>
-				<span class="time">4:00 pm</span>
-				<p>Top 10 hacks and API winners demo their projects. Swag and Prizes given out.</p>
-			</div>
-			<div class="event white-box">
-				<h3>Bye!</h3>
-				<span class="time">6:00 pm</span>
-				<p>Pack and clean up. See you again next year!</p>
+			<div class="timeline">
+				<div class="pole"></div>
+				<div class="event white-box">
+					<h3>Registration Opens</h3>
+					<span class="time">12:30 pm</span>
+					<p>	First 50 hackers get a treat!</p>
+				</div>
+				<div class="event white-box">
+					<h3>Registration Closes</h3>
+					<span class="time">1 pm</span>
+					<p>Hackers are welcome to enter later, but everyone should be in by now.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Keynote/Opening</h3>
+					<span class="time">1:15 pm</span>
+					<p>With a special guest!</p>
+				</div>
+				<div class="event white-box">
+					<h3>Hacking Starts</h3>
+					<span class="time">2 pm</span>
+					<p>It begins.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Dinner</h3>
+					<span class="time">7:30 pm</span>
+					<p>Food TBD</p>
+				</div>
+				<div class="event white-box">
+					<h3>Midnight Surprise</h3>
+					<span class="time">12 am</span>
+					<p>Just a nice little treat provided by TBD.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Early Breakfast</h3>
+					<span class="time">6 am</span>
+					<p>Early bird breakfast provided by TBD.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Normal Breakfast</h3>
+					<span class="time">8 am</span>
+					<p>It begins.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Lunch</h3>
+					<span class="time">1 pm</span>
+					<p>Food TBD.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Hacking Ends</h3>
+					<span class="time">2 pm</span>
+					<p>All projects must be submitted. Hands off the keyboards!</p>
+				</div>
+				<div class="event white-box">
+					<h3>Project Expo</h3>
+					<span class="time">2:30 pm</span>
+					<p>Ship it.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Awards</h3>
+					<span class="time">4 pm</span>
+					<p>Top 10 hacks and API winners demo their projects. Swag and Prizes given out.</p>
+				</div>
+				<div class="event white-box">
+					<h3>Bye!</h3>
+					<span class="time">6 pm</span>
+					<p>Pack and clean up. See you again next year!</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -273,12 +276,26 @@
 			<p>Coming soon!</p>
 		</div>
 	</div> -->
-	<div id="prizes">
+	<section id="prizes">
 		<div class="c">
 			<h1>Prizes</h1>
 			<p>Coming soon!</p>
+			<div class="row">
+				<div class="col-30">
+					<h3>Xst Place</h3>
+					<p>List of prizes TBD!</p>
+				</div>
+				<div class="col-40">
+					<h3>Xst Place</h3>
+					<p>List of prizes TBD!</p>
+				</div>
+				<div class="col-30">
+					<h3>Xst Place</h3>
+					<p>List of prizes TBD!</p>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
 	<section id="sponsors">
 		<div class="c">
 			<h1>We <i class="icon-heart love"></i> Our Sponsors</h1>
@@ -494,5 +511,6 @@
 	<!-- Scripts at the bottom so that the pages load content first -->
 	<script src="/scripts/vendor/jquery-1.11.1.min.js"></script>
 	<script src="/scripts/vendor/skrollr-0.6.26.min.js"></script>
+	<script src="/scripts/site.js"></script>
 </body>
 </html>
