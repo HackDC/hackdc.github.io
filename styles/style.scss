@@ -408,6 +408,9 @@ img {
 #prizes {
   background: $purple;
   color: white;
+  ul li.main {
+    font-size: 40px;
+  }
 }
 
 
@@ -436,6 +439,8 @@ img {
     width: 400px;
     max-width: 45%;
     margin-bottom: 50px;
+    position: relative;
+    overflow: visible;
     h3 {
       padding-right: 70px;
     }
@@ -445,14 +450,66 @@ img {
     }
     &:nth-child(2n+0) {
       float: left;
-      margin-left: 10px; 
+      margin-left: 10px;
+      &:before {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        content: " ";
+        display: block;
+        background: none repeat scroll 0% 0% transparent;
+        border: 6px solid $green;
+        border-radius: 50%;
+        box-sizing: content-box;
+        right: -14.6%;
+        top: 25px;
+      }
+      &:after {
+        content: "";
+        display: block;
+        margin-left: -40px;
+        transform: rotate(270deg);
+        position: absolute;
+        top: 20px;
+        right: -37px;
+        border-style: solid;
+        border-width: 25px 25px 0px;
+        border-color: #FFF transparent transparent;
+      }
     }
     &:nth-child(2n+1) {
       // margin-top: 20px;
       float: right;
+      &:before {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        content: " ";
+        display: block;
+        background: none repeat scroll 0% 0% transparent;
+        border: 6px solid $green;
+        border-radius: 50%;
+        box-sizing: content-box;
+        left: -15.9%;
+        top: 25px;
+      }
+      &:after {
+        content: "";
+        display: block;
+        margin-left: -40px;
+        transform: rotate(270deg);
+        position: absolute;
+        left: 15px;
+        margin-left: -52px;
+        transform: rotate(90deg);
+        top: 25px;
+        border-style: solid;
+        border-width: 25px 25px 0px;
+        border-color: #FFF transparent transparent;
+      }
     }
     &:nth-child(3) {
-      margin-top: 30px!important;
+      margin-top: 30px;
     }
   }
 }
@@ -525,9 +582,16 @@ img {
   color: white;
 }
 
+.visible-mobile {
+  visibility: hidden;
+}
+
 @media screen and (max-width: $mobile) {
   .hidden-mobile {
     display: none!important;
+  }
+  .visible-mobile {
+    visibility: visible;
   }
   .mobile-transition {
     transition: all .4s ease-in-out;
@@ -615,11 +679,17 @@ img {
       width: auto!important;
       display: block;
       max-width: 100%;
+      &:before, &:after {
+        display: none!important;
+      }
     }
   }
   // FAQ: collapsable questions
   #faq .qna {
     cursor: pointer;
+    i.icon-arrow-right {
+      @extend .mobile-transition;
+    }
     h3 {
       font-size: 18px;
     }
@@ -634,6 +704,9 @@ img {
       margin: 0px;
     }
     &.expanded {
+      i.icon-arrow-right {
+        transform: rotate(90deg);
+      }
       h3, .question {
         border-bottom-color: black;
       }
