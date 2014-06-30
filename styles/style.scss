@@ -329,7 +329,7 @@ img {
   .compact {
     display: inline-block;
     margin: -50px -30px 10px -30px;
-    max-width: 65%;
+    max-width: 55%;
     padding-top: 20px;
     vertical-align: middle;
   }
@@ -337,6 +337,7 @@ img {
     // display: inline-block;
     margin-top: -80px;
     font-weight: bold;
+    vertical-align: middle;
   }
   .ribbon {
     @extend h1;
@@ -579,6 +580,10 @@ img {
       position: relative;
       height: auto;
       padding: 20px 0;
+    }
+    .brace-left, .brace-right {
+      font-size: 120px;
+      vertical-align: top;
     }
     h1 {
       display: none;
