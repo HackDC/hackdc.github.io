@@ -1,3 +1,5 @@
+// Fancy custom CSS framework
+
 // Normalize
 @import "global/_normalize.scss";
 
@@ -69,19 +71,19 @@ $media-desktop-min: 1025px !default;
 @import url(../fonts/icons/style.css);
 
 // Prettyprint Code
-@import "global/_prettyprint-monokai.scss";
+// @import "global/_prettyprint-monokai.scss";
 
 // Modals
-@import "global/_modal.scss";
+// @import "global/_modal.scss";
 
 // Long Shadows
-@import "global/_longshadows.scss";
+// @import "global/_longshadows.scss";
 
 // Navigation
 @import "_nav.scss";
 
 // Tooltips
-@import "global/_tooltips.scss";
+// @import "global/_tooltips.scss";
 
 // Custom Styles
 body {
@@ -235,6 +237,11 @@ img {
 
 .love {
   color: $red;
+  display: inline-block;
+  animation: 1s heartbeat infinite;
+  -moz-animation: 1s heartbeat infinite;
+  -webkit-animation: 1s heartbeat infinite;
+  -ms-animation: 1s heartbeat infinite;
 }
 
 .highlight {
@@ -318,6 +325,10 @@ img {
     border: 2px solid black;
     display: inline-block;
     margin: -60px -30px 0 -30px;
+  }
+  .compact {
+    margin: -60px -30px 0 -30px;
+    max-width: 65%;
   }
   .ribbon {
     @extend h1;
@@ -404,6 +415,7 @@ img {
   .pole {
     background: rgba(0,0,0,.5);
     background: $navy;
+    background: linear-gradient($navy, $purple);
     position: absolute;
     top: 0px;
     left: 50%;
@@ -465,6 +477,8 @@ img {
 
 // Sponsors
 #sponsors {
+  background: $blue;
+  color: white;
   .white-box {
     min-height: 375px;
     margin-bottom: 1.3em;
@@ -566,6 +580,13 @@ img {
     }
     p.lead {
       font-size: 28px;
+    }
+  }
+  #about {
+    background: $gray;
+    padding: 20px 0;
+    .white-box {
+      margin: 20px 0;
     }
   }
   // Schedule single column
