@@ -386,8 +386,8 @@ body {
   color: black;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
-  font-family: "Kinic Slab", Arial, sans-serif;
-  font-weight: normal;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;  font-weight: normal;
   vertical-align: middle; }
 
 a {
@@ -1904,8 +1904,8 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-right: 1px solid rgba(0, 0, 0, 0.45); }
 
 body {
-  font-family: "Kinic Slab", Arial, sans-serif;
-  font-size: 17px;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;  font-size: 17px;
   line-height: 1.5em; }
 
 h1, #intro .ribbon, h2, h3, h4, h5 {
