@@ -1,3 +1,5 @@
+// Fancy custom CSS framework
+
 // Normalize
 @import "global/_normalize.scss";
 
@@ -69,19 +71,19 @@ $media-desktop-min: 1025px !default;
 @import url(../fonts/icons/style.css);
 
 // Prettyprint Code
-@import "global/_prettyprint-monokai.scss";
+// @import "global/_prettyprint-monokai.scss";
 
 // Modals
-@import "global/_modal.scss";
+// @import "global/_modal.scss";
 
 // Long Shadows
-@import "global/_longshadows.scss";
+// @import "global/_longshadows.scss";
 
 // Navigation
 @import "_nav.scss";
 
 // Tooltips
-@import "global/_tooltips.scss";
+// @import "global/_tooltips.scss";
 
 // Custom Styles
 body {
@@ -110,7 +112,7 @@ hr {
 
 header, section, footer, .footnote {
   position: relative; overflow: hidden;
-  padding: 30px 0px;
+  padding: 40px 0px;
   background: white
 }
 
@@ -131,6 +133,17 @@ header, section, footer, .footnote {
   color: white;
 }
 
+// Grid overrides
+.row {
+  [class^=col]:first-child {
+    padding-left: 0px;
+  }
+  [class^=col]:last-child {
+    padding-right: 0px;
+  }
+}
+
+// Buttons
 .button {
   // @extend .button-large;
   border-radius: 6px;
@@ -224,6 +237,11 @@ img {
 
 .love {
   color: $red;
+  display: inline-block;
+  animation: 1s heartbeat infinite;
+  -moz-animation: 1s heartbeat infinite;
+  -webkit-animation: 1s heartbeat infinite;
+  -ms-animation: 1s heartbeat infinite;
 }
 
 .highlight {
@@ -278,13 +296,14 @@ img {
     z-index: 200;
   }
   .middled {
-    height: 450px;
+    // height: 450px;
+    height: 300px;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
   }
   .logo {
-    line-height: 14px;
+    line-height: 140px;
     text-align: center;
     font-size: 180px;
     font-weight: 200;
@@ -307,6 +326,19 @@ img {
     border: 2px solid black;
     display: inline-block;
     margin: -60px -30px 0 -30px;
+  }
+  .compact {
+    display: inline-block;
+    margin: -50px -30px 10px -30px;
+    max-width: 55%;
+    padding-top: 20px;
+    vertical-align: middle;
+  }
+  .brace-left, .brace-right {
+    // display: inline-block;
+    margin-top: -80px;
+    font-weight: bold;
+    vertical-align: middle;
   }
   .ribbon {
     @extend h1;
@@ -362,9 +394,138 @@ img {
   // background: $purple;
 }
 
+// About
+#about {
+
+}
+
+// Venue
+#venue {
+  background: $navy;
+  color: white;
+  .photos {
+    a {
+      @extend .transition;
+      background: white;
+      padding: 8px;
+      text-align: center;
+      color: gray;
+      border-radius: $border-radius;
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.15);
+      &:hover {
+        box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.5), 0px 1px 4px rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+// Prizes
+#prizes {
+  background: $purple;
+  color: white;
+  ul li.main {
+    font-size: 40px;
+  }
+}
+
+
 // Schedule
 #schedule {
+  background: $green;
+  color: white;
+  .timeline {
+    width: 100%;
+    max-width: 920px;
+    margin: auto;
+    position: relative;
+  }
+  .pole {
+    background: rgba(0,0,0,.5);
+    background: $navy;
+    background: linear-gradient($navy, $purple);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -3px;
+    width: 6px;
+    height: 100%;
+  }
   .event {
+    width: 400px;
+    max-width: 45%;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: visible;
+    h3 {
+      padding-right: 70px;
+    }
+    .time {
+      float: right;
+      margin-top: -30px;
+    }
+    &:nth-child(2n+0) {
+      float: left;
+      margin-left: 10px;
+      &:before {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        content: " ";
+        display: block;
+        background: none repeat scroll 0% 0% transparent;
+        border: 6px solid $green;
+        border-radius: 50%;
+        box-sizing: content-box;
+        right: -14.8%;
+        top: 25px;
+      }
+      &:after {
+        content: "";
+        display: block;
+        margin-left: -40px;
+        transform: rotate(270deg);
+        position: absolute;
+        top: 20px;
+        right: -37px;
+        border-style: solid;
+        border-width: 25px 25px 0px;
+        border-color: #FFF transparent transparent;
+      }
+    }
+    &:nth-child(2n+1) {
+      // margin-top: 20px;
+      float: right;
+      &:before {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        content: " ";
+        display: block;
+        background: none repeat scroll 0% 0% transparent;
+        border: 6px solid $green;
+        border-radius: 50%;
+        box-sizing: content-box;
+        left: -15.9%;
+        top: 25px;
+      }
+      &:after {
+        content: "";
+        display: block;
+        margin-left: -40px;
+        transform: rotate(270deg);
+        position: absolute;
+        left: 15px;
+        margin-left: -52px;
+        transform: rotate(90deg);
+        top: 25px;
+        border-style: solid;
+        border-width: 25px 25px 0px;
+        border-color: #FFF transparent transparent;
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -373,7 +534,6 @@ img {
   background: $red;
   color: white;
   .qna {
-    @extend .white-box;
     margin-bottom: 20px;
   }
 }
@@ -398,6 +558,8 @@ img {
 
 // Sponsors
 #sponsors {
+  background: $blue;
+  color: white;
   .white-box {
     min-height: 375px;
     margin-bottom: 1.3em;
@@ -405,7 +567,7 @@ img {
       margin-bottom: 2px;
     }
     &.editable {
-      height: 375px;
+      max-height: 500px;
       overflow: hidden;
       h3, p {
         border: 1px dotted black;
@@ -420,6 +582,13 @@ img {
   line-height: 150px;
   background: black;
   color: white;
+  overflow: hidden;
+  img {
+    vertical-align: middle;
+    max-width: 85%;
+    max-height: 95%;
+    margin: auto;
+  }
 }
 
 // Footer
@@ -428,8 +597,150 @@ img {
   color: white;
 }
 
+.visible-mobile {
+  visibility: hidden;
+}
+
 @media screen and (max-width: $mobile) {
+  .hidden-mobile {
+    display: none!important;
+  }
+  .visible-mobile {
+    visibility: visible;
+  }
+  .mobile-transition {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+  }
+  .row {
+    [class^=col]:first-child {
+      padding-left: 10px;
+    }
+    [class^=col]:last-child {
+      padding-right: 10px;
+    }
+  }
+  .button {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .button-jumbo, .button-large {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .button-jumbo {
+    font-size: 24px;
+  }
+  .button-large {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 6px 0;
+  }
+  p.lead {
+    font-size: 22px;
+  }
+  #intro {
+    height: auto!important;
+    min-height: 300px;
+    max-height: 1080px;
+    .middled {
+      position: relative;
+      height: auto;
+      padding: 20px 0;
+    }
+    .brace-left, .brace-right {
+      font-size: 120px;
+      vertical-align: top;
+    }
+    h1 {
+      display: none;
+    }
+    hr {
+      margin-top: 20px;
+    }
+    p.lead {
+      font-size: 28px;
+    }
+  }
+  #about {
+    background: $gray;
+    padding: 20px 0;
+    .white-box {
+      margin: 20px 0;
+    }
+  }
+  // Schedule single column
+  #schedule {
+    .pole {
+      display: none;
+    }
+    .event {
+      float: none!important;
+      margin-top: 10px!important;
+      margin-bottom: 10px!important; 
+      margin-left: 0px!important;
+      width: auto!important;
+      display: block;
+      max-width: 100%;
+      &:before, &:after {
+        display: none!important;
+      }
+    }
+  }
+  // FAQ: collapsable questions
+  #faq .qna {
+    cursor: pointer;
+    i.icon-arrow-right {
+      @extend .mobile-transition;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h3, .question {
+      border-bottom-color: white;
+      @extend .mobile-transition;
+    }
+    p, .answer, ul {
+      @extend .mobile-transition;
+      height: 0px;
+      overflow: hidden;
+      margin: 0px;
+    }
+    &.expanded {
+      i.icon-arrow-right {
+        transform: rotate(90deg);
+      }
+      h3, .question {
+        border-bottom-color: black;
+      }
+      p, .answer, ul {
+        height: auto;
+        margin: 8px 0px;
+      }
+    }
+  }
+  #faq-submit {
+    display: none;
+  }
+  // Sponsors: name and website
+  header .button-blue {
+    display: none;
+  }
   #sponsors {
+    // Or hide them on mobile
+    display: none;
     .brand, p, .editable {
       display: none;
     }
@@ -440,6 +751,11 @@ img {
     h3, .buttons {
       display: inline-block;
       border-bottom: none;
+    }
+    // Center smaller headings
+    #faq-submit h2, #more h2 {
+      font-size: 32px;
+      text-align: center;
     }
   }
 }
