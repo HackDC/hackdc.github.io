@@ -62,7 +62,7 @@
 <body>
 	<span id="top"></span>
 	<header id="intro">
-		<div class="middled">
+		<div class="middled intro">
 			<div class="c text-center">
 				<!-- <div class="logo">
 					<img src="/vectors/bracket-left.png" height="140" width="28" alt="">
@@ -79,8 +79,21 @@
 				<p class="lead">December 13-14 in TBD</p>
 				<p class="lead"><b>A 24-hour coding competition for high school students.</b></p>
 				<br>
-				<p class="lead text-center"><a href="https://docs.google.com/forms/d/1wna-z_5X54re7BBFbENzXF3ptCiROXYw5BXt5JuEfiQ/viewform" class="button button-jumbo button-orange"><i class="icon-ol-user"></i> Interest Form!</a> <a href="https://docs.google.com/forms/d/1t0uBY37v8deqkP9YS2temFGtAYQyTckjiFNz0ZyX0YQ/viewform" class="button button-jumbo button-green" target="_blank"><i class="icon-ol-megaphone"></i> Become a Mentor!</a> <a href="#sponsors" class="button button-jumbo button-blue"><i class="icon-ol-like"></i> Sponsor Us!</a> </p>
+				<p class="lead text-center"><a href="#reg" onclick="$('#intro').toggleClass('slide-2')" class="button button-jumbo button-orange"><i class="icon-ol-user"></i> Interest Form!</a> <a href="https://docs.google.com/forms/d/1t0uBY37v8deqkP9YS2temFGtAYQyTckjiFNz0ZyX0YQ/viewform" class="button button-jumbo button-green" target="_blank"><i class="icon-ol-megaphone"></i> Become a Mentor!</a> <a href="#sponsors" class="button button-jumbo button-blue"><i class="icon-ol-like"></i> Sponsor Us!</a> </p>
 			</div>
+	</div>
+	<div class="middled reg" id="register">
+		<div class="c text-center">
+			<p class="lead"><a href="#intro" onclick="$('#intro').toggleClass('slide-2')" class="button"><i class="icon-arrow-left"></i></a> <b>Interest Form</b></p>
+			<form action="https://docs.google.com/forms/d/1wna-z_5X54re7BBFbENzXF3ptCiROXYw5BXt5JuEfiQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+			  <input type="text" name="entry.2067152739" value="" class="ss-q-short" id="entry_2067152739" dir="auto" aria-label="Full Name  " aria-required="email" required="" title="" placeholder="Name">
+			  <input type="email" name="entry.1280338010" value="" class="ss-q-short" id="entry_1280338010" dir="auto" aria-label="Email  " aria-required="true" required="" title="" placeholder="E-Mail">
+			  <input type="text" name="entry.379356565" value="" class="ss-q-short" id="entry_379356565" dir="auto" aria-label="Location City,State " aria-required="true" required="" title="" placeholder="City, State">
+			  <input type="text" name="entry.2128803607" value="" class="ss-q-short" id="entry_2128803607" dir="auto" aria-label="School (High Schoolers Only) " aria-required="true" required="" title="" placeholder="School (HS Students)">
+			  <input type="hidden" name="fbzx" value="-8702239627474830603">
+			  <input type="submit" name="submit" value="Submit" id="ss-submit" class="submit">
+			</form>
+		</div>
 	</div>
 	</header>
 	<div class="has-nav">
@@ -479,10 +492,10 @@
 				
 				<div class="col-33">
 					<div class="white-box">
-						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/modev.jpg" alt=""></div>
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/modev.png" alt=""></div>
 						<h3>MoDev</h3>
 						<p>MoDev connects developers, designers, marketers and providers through meetups, conferences and hackathons to help them stay ahead of fast moving markets and technologies..</p>						
-						<a href="http://gomodev.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i>gomodev.com</a>
+						<a href="http://gomodev.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> gomodev.com</a>
 
 						
 					</div>

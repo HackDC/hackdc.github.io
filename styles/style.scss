@@ -171,7 +171,6 @@ header, section, footer, .footnote {
   @include button-inset($green);
 }
 
-
 .disabled {
   pointer-events: none;
   opacity: 0.5;
@@ -301,6 +300,15 @@ img {
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+    @extend .transition;
+    &.reg {
+      left: 200%;
+      width: 355px;
+      p.lead a {
+        font-size: 30px;
+        margin-left: -20px;
+      }
+    }
   }
   .logo {
     line-height: 140px;
@@ -359,6 +367,44 @@ img {
     font-size: 36px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  form {
+    text-align: center;
+    input {
+      @extend .button;
+      @extend .button-jumbo;
+      @include button-subtle(white);
+      cursor: text;
+      color: black;
+      text-shadow: none;
+      display: block;
+      width: 100%;
+      max-width: 355px;
+      &:active, &:focus {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+      }
+      &:invalid {
+        border-color: $red;
+      }
+      &:valid {
+        border-color: $green;
+      }
+      &.submit {
+        @include button-subtle($green);
+        color: white;
+        text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  &.slide-2 {
+    .middled.intro {
+      left: -200%;
+    }
+    .middled.reg {
+      left: 0px;
+    }
   }
 }
 
@@ -428,6 +474,10 @@ img {
   }
 }
 
+// Judges
+#judges {
+
+}
 
 // Schedule
 #schedule {
@@ -672,6 +722,23 @@ img {
     }
     p.lead {
       font-size: 28px;
+    }
+    .middled.reg {
+      height: 0;
+      padding: 0 0;
+      overflow: hidden;
+    }
+    &.slide-2 {
+      .middled.intro {
+        height: 0;
+        padding: 0 0;
+        overflow: hidden;
+      }
+      .middled.reg {
+        height: auto;
+        padding: 20px 0 40px 0;
+        overflow: visible;
+      }
     }
   }
   #about {
