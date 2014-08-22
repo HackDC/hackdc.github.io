@@ -2810,3 +2810,7 @@ img {
     #sponsors #faq-submit h2, #sponsors #more h2 {
       font-size: 32px;
       text-align: center; } }
+/* Placeholder */
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+}
