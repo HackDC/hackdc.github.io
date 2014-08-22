@@ -826,3 +826,7 @@ img {
     }
   }
 }
+/* Placeholder */
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+}
