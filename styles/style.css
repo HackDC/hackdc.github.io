@@ -2811,6 +2811,5 @@ img {
       font-size: 32px;
       text-align: center; } }
 /* Placeholder */
-[contenteditable=true]:empty:before{
-  content: attr(placeholder);
-}
+[contenteditable=true]:empty:before {
+  content: attr(placeholder); }
