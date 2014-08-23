@@ -88,7 +88,8 @@ $media-desktop-min: 1025px !default;
 // Custom Styles
 body {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 //  font-family: 'Roboto', $fonts;
 }
 
