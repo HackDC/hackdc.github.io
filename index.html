@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>HackDC - Fall 2014</title>
+	<title>HackDC - Winter 2014</title>
 	<link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale = 1.0,maximum-scale=2.0,user-scalable=no">
 
@@ -10,9 +10,9 @@
 
 	<!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="HackDC - Fall 2014">
+    <meta property="og:title" content="HackDC - Winter 2014">
     <meta property="og:site_name" content="HackDC">
-    <meta property="og:description" content="December 13-14: A 24-hour coding competition for high school students.">
+    <meta property="og:description" content="December 2014: A 24-hour coding competition for high school students.">
     <meta property="og:url" content="http://hackdc.org/">
     <meta property="og:image" content="http://hackdc.org/vectors/logo-full.png">
 
@@ -20,8 +20,8 @@
     <meta name="robots" content="allow">
 	
 	<!-- Meta Tags -->
-	<meta name="description" content="December 13-14: A 24-hour coding competition for high school students." />
-    <meta itemprop="name" content="HackDC - Fall 2014" />
+	<meta name="description" content="December 2014: A 24-hour coding competition for high school students." />
+    <meta itemprop="name" content="HackDC - Winter 2014" />
     <meta itemprop="image" content="http://hackdc.org/vectors/logo-full.png"/ >
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -62,7 +62,7 @@
 <body>
 	<span id="top"></span>
 	<header id="intro">
-		<div class="middled">
+		<div class="middled intro">
 			<div class="c text-center">
 				<!-- <div class="logo">
 					<img src="/vectors/bracket-left.png" height="140" width="28" alt="">
@@ -76,11 +76,24 @@
 				</div> -->
 				<h1>HackDC</h1>
 				<hr>
-				<p class="lead">December 13-14 in TBD</p>
+				<p class="lead">December 2014</p>
 				<p class="lead"><b>A 24-hour coding competition for high school students.</b></p>
 				<br>
-				<p class="lead text-center"><a href="https://docs.google.com/forms/d/1wna-z_5X54re7BBFbENzXF3ptCiROXYw5BXt5JuEfiQ/viewform" class="button button-jumbo button-orange"><i class="icon-ol-user"></i> Interest Form!</a> <a href="https://docs.google.com/forms/d/1t0uBY37v8deqkP9YS2temFGtAYQyTckjiFNz0ZyX0YQ/viewform" class="button button-jumbo button-green" target="_blank"><i class="icon-ol-megaphone"></i> Become a Mentor!</a> <a href="#sponsors" class="button button-jumbo button-blue"><i class="icon-ol-like"></i> Sponsor Us!</a> </p>
+				<p class="lead text-center"><a href="#reg" onclick="$('#intro').toggleClass('slide-2')" class="button button-jumbo button-orange"><i class="icon-ol-user"></i> Interest Form!</a> <a href="https://docs.google.com/forms/d/1t0uBY37v8deqkP9YS2temFGtAYQyTckjiFNz0ZyX0YQ/viewform" class="button button-jumbo button-green" target="_blank"><i class="icon-ol-megaphone"></i> Become a Mentor!</a> <a href="#sponsors" class="button button-jumbo button-blue"><i class="icon-ol-like"></i> Sponsor Us!</a> </p>
 			</div>
+	</div>
+	<div class="middled reg" id="register">
+		<div class="c text-center">
+			<p class="lead"><a href="#intro" onclick="$('#intro').toggleClass('slide-2')" class="button"><i class="icon-arrow-left"></i></a> <b>Interest Form</b></p>
+			<form action="https://docs.google.com/forms/d/1wna-z_5X54re7BBFbENzXF3ptCiROXYw5BXt5JuEfiQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+			  <input type="text" name="entry.2067152739" value="" class="ss-q-short" id="entry_2067152739" dir="auto" aria-label="Full Name  " aria-required="email" required="" title="" placeholder="Name">
+			  <input type="email" name="entry.1280338010" value="" class="ss-q-short" id="entry_1280338010" dir="auto" aria-label="Email  " aria-required="true" required="" title="" placeholder="Email">
+			  <input type="text" name="entry.379356565" value="" class="ss-q-short" id="entry_379356565" dir="auto" aria-label="Location City,State " aria-required="true" required="" title="" placeholder="City, State">
+			  <input type="text" name="entry.2128803607" value="" class="ss-q-short" id="entry_2128803607" dir="auto" aria-label="School (High Schoolers Only) " aria-required="true" required="" title="" placeholder="High School">
+			  <input type="hidden" name="fbzx" value="-8702239627474830603">
+			  <input type="submit" name="submit" value="Submit" id="ss-submit" class="submit">
+			</form>
+		</div>
 	</div>
 	</header>
 	<div class="has-nav">
@@ -137,7 +150,7 @@
 				<div class="col-33">
 					<div class="white-box">
 						<h3><span class="highlight">Build awesome stuff.</span> <i class="icon-ol-display"></i></h3>
-						<p>Make your idea become a reality. Whether you have years of experience or just learned through HackDC's workshops, anyone can create quality applications that impress. All you need is laptop and the drive to create.</p>
+						<p>Make your idea become a reality. Whether you have years of experience or just learned through HackDC's workshops, anyone can create quality applications that impress. All you need is a laptop and the drive to create.</p>
 						<div class="bottom">
 							<a href="http://www.codecademy.com/" target="_blank">Get a Head Start <i class="icon-pointer-right"></i></a>
 						</div>
@@ -145,8 +158,10 @@
 				</div>
 				<div class="col-33">
 					<div class="white-box">
-						<h3><span class="highlight">Over $5000 in prizes.</span> <i class="icon-ol-shirt"></i></h3>
-						<p>Have you hard work pay off with awesome prizes and swag. Compete for sponsor and API prizes, or compete to be titled one of the top 3 hacks of the event. We also have tons of free swag and giveaways for all hackers.</p>
+						<!--<h3><span class="highlight">Over $5000 in prizes.</span> <i class="icon-ol-shirt"></i></h3>-->
+						<h3><span class="highlight">Win awesome prizes.</span> <i class="icon-ol-shirt"></i></h3>
+
+						<p>Have your hard work pay off with awesome prizes and swag. Compete for sponsor and API prizes or to be titled one of the top 3 hacks of the event. We also have tons of free swag and giveaways for all hackers.</p>
 						<div class="bottom">
 							<a href="#prizes">Peek at our Prizes <i class="icon-pointer-right"></i></a>
 						</div>
@@ -254,7 +269,7 @@
 				<div class="event white-box">
 					<h3>Registration Closes</h3>
 					<span class="time">1 pm</span>
-					<p>Hackers are welcome to enter later, but everyone should be in by now.</p>
+					<p>Hackers are welcome to enter later, but everyone should be in by now!</p>
 				</div>
 				<div class="event white-box">
 					<h3>Keynote/Opening</h3>
@@ -274,27 +289,27 @@
 				<div class="event white-box">
 					<h3>Midnight Surprise</h3>
 					<span class="time">12 am</span>
-					<p>Just a nice little treat provided by TBD.</p>
+					<p>Just a nice little treat provided by TBD!</p>
 				</div>
 				<div class="event white-box">
-					<h3>Early Breakfast</h3>
+					<h3>Early Bird Breakfast</h3>
 					<span class="time">6 am</span>
 					<p>Early bird breakfast provided by TBD.</p>
 				</div>
 				<div class="event white-box">
 					<h3>Normal Breakfast</h3>
 					<span class="time">8 am</span>
-					<p>It begins.</p>
+					<p>Food TBD</p>
 				</div>
 				<div class="event white-box">
 					<h3>Lunch</h3>
 					<span class="time">1 pm</span>
-					<p>Food TBD.</p>
+					<p>Food TBD</p>
 				</div>
 				<div class="event white-box">
 					<h3>Hacking Ends</h3>
 					<span class="time">2 pm</span>
-					<p>All projects must be submitted. Hands off the keyboards!</p>
+					<p>All projects must be submitted. Hands off the keyboard!</p>
 				</div>
 				<div class="event white-box">
 					<h3>Project Expo</h3>
@@ -304,7 +319,7 @@
 				<div class="event white-box">
 					<h3>Awards</h3>
 					<span class="time">4 pm</span>
-					<p>Top 10 hacks and API winners demo their projects. Swag and Prizes given out.</p>
+					<p>Top 10 hacks and API winners demo their projects. Swag and prizes given out.</p>
 				</div>
 				<div class="event white-box">
 					<h3>Bye!</h3>
@@ -323,28 +338,29 @@
 	<section id="prizes">
 		<div class="c">
 			<h1>Prizes</h1>
-			<p>Coming soon! Win over $5,000 in prizes! There will also be a special chance to increase the value of the prize at the event.</p>
-			<div class="row">
-				<div class="col-33">
-					<h3>1st Place</h3>
-					<ul class="lead">
-						<li class="main">$1024 USD</li>
-					</ul>
-				</div>
+			<p>Coming soon!</p>
+			<!--<p>Coming soon! Win over $5,000 in prizes! There will also be a special chance to increase the value of the prize at the event.</p>-->
+			<!--<div class="row">-->
+			<!--	<div class="col-33">-->
+			<!--		<h3>1st Place</h3>-->
+			<!--		<ul class="lead">-->
+			<!--			<li class="main">$1024 USD</li>-->
+			<!--		</ul>-->
+			<!--	</div>-->
 
-				<div class="col-33">
-					<h3>2nd Place</h3>
-					<ul class="lead">
-						<li class="main">$512 USD</li>
-					</ul>
-				</div>
-				<div class="col-33">
-					<h3>3rd Place</h3>
-					<ul class="lead">
-						<li class="main">$256 USD</li>
-					</ul>
-				</div>
-			</div>
+			<!--	<div class="col-33">-->
+			<!--		<h3>2nd Place</h3>-->
+			<!--		<ul class="lead">-->
+			<!--			<li class="main">$512 USD</li>-->
+			<!--		</ul>-->
+			<!--	</div>-->
+			<!--	<div class="col-33">-->
+			<!--		<h3>3rd Place</h3>-->
+			<!--		<ul class="lead">-->
+			<!--			<li class="main">$256 USD</li>-->
+			<!--		</ul>-->
+			<!--	</div>-->
+			<!--</div>-->
 		</div>
 	</section>
 	<section id="sponsors">
@@ -355,9 +371,9 @@
 			<div class="row">
 				<div class="col-33">
 					<div class="white-box editable">
-						<div class="brand" contenteditable>Your Fancy Logo Here!</div>
-						<h3 contenteditable>Your Name Here!</h3>
-						<p contenteditable>Interested in sponsoring us? Check out the PDF below and edit me to test your elevator pitch!</p>
+						<div class="brand" placeholder="Your Fancy Logo Here!" contenteditable=true></div>
+						<h3 placeholder="Your Name Here!" contenteditable=true></h3>
+						<p placeholder="Interested in sponsoring us? Check out the PDF below and edit me to test your elevator pitch!" contenteditable=true></p>
 						<div class="buttons">
 							<a href="/media/HackDC_Sponsor.pdf" class="button button-small" target="_blank"><i class="icon-file"></i> Sponsorship Document (PDF)</a>
 						</div>
@@ -366,7 +382,7 @@
 				<div class="col-33">
 					<div class="white-box">
 						<div class="brand" style="background:rgb(228, 228, 228)"><img src="/images/logos/ridescout.png" alt=""></div>
-						<h3>Ridescout</h3>
+						<h3>RideScout</h3>
 						<p>RideScout is a mobile app that helps you get from point A to point B faster and smarter.</p>
 						<div class="buttons">
 							<a href="http://ridescoutapp.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> ridescoutapp.com</a>
@@ -404,7 +420,7 @@
 				<div class="col-33">
 					<div class="white-box">
 						<div class="brand" style="background:rgb(46, 49, 51);border-top: 4px solid rgb(140, 193, 193);"><img src="/images/logos/namecheap-white.png" alt=""></div>
-						<h3>NameCheap</h3>
+						<h3>Namecheap</h3>
 						<p>We make registering, hosting, and managing domains for yourself or others easy and affordable.</p>
 						<a href="http://namecheap.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> namecheap.com</a>
 					</div>
@@ -428,9 +444,73 @@
 					</div>
 				</div>
 				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/clearancejobs.png" alt=""></div>
+						<h3>ClearanceJobs</h3>
+						<p>A professional career network dedicated to security-cleared professionals and employers.</p>
+						<a href="http://clearancejobs.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> clearancejobs.com</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/github.png" alt=""></div>
+						<h3>GitHub</h3>
+						<p>GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over six million people use GitHub to build amazing things together.</p>						
+						<a href="http://github.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> github.com</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:#222"><img src="/images/logos/wolfram.png" alt=""></div>
+						<h3>Wolfram</h3>
+						<p>The integrated technical computing software company founded and led by Stephen Wolfram.</p>						
+						<a href="http://wolfram.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> wolfram.com</a>
+					</div>
+				</div>
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/istrategylabs.png" alt=""></div>
+						<h3>iStrategy Labs</h3>
+						<p>iStrategyLabs is a creative agency that builds online and offline movements that engage communities through innovative marketing, experimental uses of social media, and civic innovation programs of all kinds.</p>						
+						<a href="http://istrategylabs.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> istrategylabs.com</a>
+					</div>
+				</div>
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/tessel.png" alt=""></div>
+						<h3>Tessel</h3>
+						<p>Tessel is a microcontroller that runs JavaScript. It's Node-compatible and ships with Wifi built in. Use it to easily make physical devices that connect to the web.</p>						
+						<a href="http://tessel.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> tessel.com</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/gogosqueez.png" alt=""></div>
+						<h3>Squeezsquad</h3>
+						<p>The squeeZ Squad is a team of passionate GoGo lovers that also love being out in their own community. Our team mission is to get GoGo squeeZ to families at work and at play.</p>						
+						<a href="http://www.gogosqueez.com/about/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> gogosqueez.com</a>
+					</div>
+				</div>
+				<div class="col-33">
+					
+				</div>
+				<div class="col-33">
 					
 				</div>
 			</div>
+
+
 			<h2>Partners</h2>
 			<p>We love our partners as well!</p>
 			<div class="row">
@@ -438,7 +518,7 @@
 					<div class="white-box">
 						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/mlh.png" alt=""></div>
 						<h3>Major League Hacking</h3>
-						<p>We works with student hackathon organizers from day zero to help them put on the best possible hackathons.</p>
+						<p>We work with student hackathon organizers from day zero to help them put on the best possible hackathons.</p>
 						<a href="http://mlh.io/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> mlh.io</a>
 					</div>
 				</div>
@@ -460,6 +540,15 @@
 				</div>
 			</div>
 			<div class="row">
+				
+				<div class="col-33">
+					<div class="white-box">
+						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/modev.png" alt=""></div>
+						<h3>MoDev</h3>
+						<p>MoDev connects developers, designers, marketers and providers through meetups, conferences and hackathons to help them stay ahead of fast moving markets and technologies.</p>						
+						<a href="http://gomodev.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i> gomodev.com</a>
+					</div>
+				</div>
 				<div class="col-33">
 					<div class="white-box">
 						<div class="brand" style="background:rgb(0, 62, 212)"><img src="/images/logos/mhacks.png" alt=""></div>
@@ -477,20 +566,8 @@
 					</div>
 				</div>
 				
-				<div class="col-33">
-					<div class="white-box">
-						<div class="brand" style="background:rgb(240,240,240)"><img src="/images/logos/modev.jpg" alt=""></div>
-						<h3>MoDev</h3>
-						<p>MoDev connects developers, designers, marketers and providers through meetups, conferences and hackathons to help them stay ahead of fast moving markets and technologies..</p>						
-						<a href="http://gomodev.com/" target="_blank" class="button button-blue button-small"><i class="icon-planet"></i>gomodev.com</a>
-
-						
-					</div>
-				</div>
-				<div class="col-33">
-
-				</div>
 			</div>
+
 		</div>
 	</section>
 	<section id="faq">
@@ -501,33 +578,33 @@
 
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>Who can participate? <i class="icon-arrow-right right visible-mobile"></i></h3>
-						<p>Any high schooler can participate, if you are starting ninth grade in the fall, you can participate too!</p>
+						<p>Any high schooler can participate! If you're starting ninth grade in the fall, you can participate too!</p>
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
-						<h3>What If I don’t know how to code? <i class="icon-arrow-right right visible-mobile"></i></h3>
-						<p>No problem! One of the main points of a hackathon is to help teach students who have no prior coding experience, helping them create something great from scratch. We will have mentors and workshops to help you all night and day. All we ask from you is the willingness to learn and you can certainly create something you can be proud of.</p>
+						<h3>What if I don’t know how to code? <i class="icon-arrow-right right visible-mobile"></i></h3>
+						<p>No problem! One of the main points of a hackathon is to help teach students who have no prior coding experience so that they can create something great from scratch. We will have mentors and workshops available to help you for the entire duration of the event! All we ask from you is the willingness to learn and to create something you can be proud of.</p>
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>How much does this cost?  <i class="icon-arrow-right right visible-mobile"></i></h3>
 
 						<p>Short answer: nothing.
-						Long answer: $0.</p>
+						Long answer: $0.00.</p>
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>What should I bring to the hackathon? <i class="icon-arrow-right right visible-mobile"></i></h3>
 						<p>
 							<ul class="answer">
-								<li>A Laptop + Charger</li>
-								<li>Cellphone and Mobile Devices + Chargers</li>
-								<li>Sleeping Bag (Highly Recommended)</li>
+								<li>A laptop + charger</li>
+								<li>A cellphone and mobile devices + chargers</li>
+								<li>Sleeping bag (highly recommended)</li>
 								<li>At least two sets of clothes</li>
-								<li>Basic Toiletries</li>
+								<li>Basic toiletries</li>
 							</ul>
 						</p>
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>I don't have a team! <i class="icon-arrow-right right visible-mobile"></i></h3>
-						<p>We'll have a team building session right before hacking starts. We'll quickly introduce ourselves and form teams however we choose. You'll make cool new friends!</p>
+						<p>We'll have a team building session right before hacking starts. You'll quickly introduce yourselves and form teams however you choose. You'll make cool new friends!</p>
 					</div>
 
 				</div>
@@ -535,11 +612,11 @@
 					
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>What do I make? <i class="icon-arrow-right right visible-mobile"></i></h3>
-						<p>Anything you'd like. Come up with your favorite idea and make it a reality! Use any programming languages, development stacks, APIs, and other tools you need.</p>
+						<p>Anything you'd like. Come up with your favorite idea and make it reality! Use any programming languages, development stacks, APIs, and other tools you need.</p>
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>Can I continue my awesome project I've been working on? <i class="icon-arrow-right right visible-mobile"></i></h3>
-						<p>Thats awesome your already hacking away. Unfortunately, all code for this event must be written during hacking window during the event, but use of public, open-source external libraries and APIs are encouraged!</p>
+						<p>It's great to hear that you're already hacking away! Unfortunately, all code for this event must be written during the duration of the event, but use of public, open-source external libraries and APIs are encouraged!</p>
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>Do I need to be at the venue at all times? <i class="icon-arrow-right right visible-mobile"></i></h3>
@@ -547,11 +624,11 @@
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>I have some dietary restrictions. <i class="icon-arrow-right right visible-mobile"></i></h3>
-						<p>We've got you covered. Just mention it in the application (coming soon.)</p>
+						<p>We've got you covered. Just mention it in the application (coming soon)!</p>
 					</div>
 					<div class="qna white-box" onclick="$(this).toggleClass('expanded');">
 						<h3>I'm not a high school student. <i class="icon-arrow-right right visible-mobile"></i></h3>
-						<p>Come in as a mentor to help out! Mentors with any skills related to creating products (programming, design, UX, buisiness) are welcome to help out. Mentor sign-ups will be open soon.</p>
+						<p>Come in as a mentor to help out! Mentors with any skills related to creating products (programming, design, UX, or business) are welcome to help out. Sign up now at the top of this page!</p>
 					</div>
 
 
@@ -575,7 +652,7 @@
 			<div class="row">
 				<div class="col-33">
 					<h2>More Info</h2>
-					<p>Need something else? Drop us a line at team(at)hackdc.org or talk to anyone on our team.</p>
+					<p>Need something else? Drop us a line at team(at)hackdc.org or talk to anyone on our team.<br><strong>HackDC is not affiliated with <a href="http://www.hacdc.org/" target="_blank">HacDC</a>.</strong></p>
 				</div>
 				<div class="col-33">
 					<h2>Connect with us!</h2>
@@ -584,9 +661,7 @@
 				</div>
 				<div class="col-33">
 					<h2>About this Site</h2>
-					<p>
-						Crafted &amp; designed with love by <a href="http://victorlourng.com" target="_blank">Victor Lourng</a>. Try on mobile! Contribute/edit via GitHub:
-					</p>
+					<p>Crafted &amp; designed with love by <a href="http://victorlourng.com" target="_blank">Victor Lourng</a>. Try on mobile! Contribute or edit via GitHub:</p>
 					<a href="https://github.com/HackDC/hackdc.github.io" class="button button-large button-orange" target="_blank"><i class="icon-github"></i> HackDC/hackdc.github.io</a>
 				</div>
 			</div>
