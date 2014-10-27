@@ -1,1 +1,3 @@
 _site/
+.temp
+.DS_STORE
